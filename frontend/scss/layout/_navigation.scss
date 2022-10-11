@@ -12,6 +12,8 @@
       &-togle {
         display: none;
           @media (max-width: 544px) {
+            background-color: $color-secondary;
+            color: $color-white;
             display: block !important;
             border: none;
             outline: none;
