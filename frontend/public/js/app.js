@@ -3,7 +3,7 @@ const scrollBar = () => {
   let header1 = document.querySelector("#my-header1-id");
   let header2 = document.querySelector("#my-header2-id");
   let logoImg = document.getElementById('logo-img-id');
-  let toggle = document.querySelector('.logo-togle-id');
+  let toggle = document.querySelector('.toggle-btn');
   window.addEventListener("scroll", () => {
     let scrollBarMovement =
       window.pageYOffset || document.documentElement.scrollBarMovement;
@@ -17,7 +17,7 @@ const scrollBar = () => {
       header1.style.setProperty('display', 'block', 'important');
       header2.style.opacity = "100";
       header2.style.setProperty('display', 'none', 'important');
-      toggle.style.setProperty('background-color', 'rgba(7, 0, 0, 0.9)', 'important');
+     
       logoImg.classname = 'navigation__logo1';
       console.log("header2")
     }
@@ -54,3 +54,33 @@ document.querySelector('.toggle-btn').addEventListener('click', () => {
   toggleBtn.style.display = "block";
   document.querySelector('.close-btn-id').style.display = "none";
 });
+
+document.querySelector('.toggle-btn1').addEventListener('click', () => {
+  let navigation = document.querySelector(".navigation1");
+  let closeIcon = document.querySelector('.navigation__close-togle1');
+  let closeBtn = document.querySelector('.close-btn-id1');
+  let toggleBtn = document.querySelector('.toggle-btn1');
+  let navigationList = document.querySelector('.navigation-id1');
+  navigationList.style.setProperty('display', 'block', 'important');
+  navigationList.style.setProperty('height', '100%', 'important');
+  navigationList.style.setProperty('width', '100%', 'important');
+  navigationList.style.setProperty('background-color', 'rgba(7, 0, 0, 0.9)', 'important');
+  navigation.style.setProperty('background-color', 'rgba(7, 0, 0, 0.9)', 'important');
+  navigation.style.setProperty('height', '100vh', 'important');
+  toggleBtn.style.display = "none";
+  closeBtn.style.display = "block";
+  closeIcon.style.display = "block";
+})
+
+
+document.querySelector('.close-btn-id1').addEventListener('click', () => {
+  let navigation = document.querySelector(".navigation1");
+  let toggleBtn = document.querySelector('.toggle-btn1');
+  let navigationList = document.querySelector('.navigation-id1');
+  navigation.style.setProperty('background-color', 'rgba(7, 0, 0, 0.9)', 'important');
+  navigation.style.setProperty('height', '5vh', 'important');
+  navigationList.style.display = "none";
+  toggleBtn.style.display = "block";
+  document.querySelector('.close-btn-id1').style.display = "none";
+});
+
