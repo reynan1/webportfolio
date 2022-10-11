@@ -1,0 +1,70 @@
+.navigation {
+    &{
+     font-size: $default-font-size;      
+    }
+
+    &__logo{ 
+      width: 28rem;
+      height: 10rem;
+
+      @media (max-width: 820px) {
+        width: 15rem;
+        height: 5rem;
+      }
+
+    }
+
+    &__list li {
+      width: 10rem !important;
+      text-align: center;
+
+      @media (max-width: 820px) {
+        width: 8rem !important;
+        text-align: center;
+      
+    }
+
+  }
+  
+    &__list li a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: $small-font-size;
+      font-weight: $light-weight;
+
+      &:hover {
+        color: $color-tertiary;
+      }
+      
+      &:hover::before {
+        content: "< ";
+        color: $color-tertiary;
+        transition: all 0.2s;
+        font-weight: $default-weight;
+      }
+
+      &:hover::after {
+        content: " >";
+        color: $color-tertiary;
+        transition: all 0.2s;
+        font-weight: $default-weight;
+      }
+    
+
+  }
+  
+  
+    .icons {
+
+      li a{
+        color: $color-white;
+      }
+
+      li a:hover {
+        color: $color-tertiary;
+      }
+      
+    }
+  
+
+}

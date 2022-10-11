@@ -1,0 +1,44 @@
+.experience {
+
+  &{
+    font-family: 'Heebo', sans-serif;
+
+    @media (max-width: 820px) {
+      width: 100%;
+    }
+
+  }
+  
+  &__list {
+      width: 20% !important;
+
+      @media (max-width: 820px) {
+        width: 40% !important;
+      }
+ 
+  }
+  
+  &__number {
+    font-size: 28px;
+    color: $color-white;
+
+    @media (max-width: 820px) {
+      padding-right: 5rem;
+    }
+  }
+
+  &__sentence {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-right: 1rem;
+    color: rgba(255, 255, 255, 0.616);
+
+    @media (max-width: 820px) {
+      font-size: 8px;;
+    }
+
+  }
+
+}

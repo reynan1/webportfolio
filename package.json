@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My experience and knowledge in web development",
+  "main": "index.js",
+  "scripts": {
+    "start": "node frontend/index.html",
+    "compile:sass": "node-sass scss/index.scss frontend/public/css/index.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
