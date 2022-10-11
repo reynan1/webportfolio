@@ -4,11 +4,21 @@
 
       @media (max-width: 820px) {
         height: 20vh !important; 
+        // border: 2px solid violet;
       }
     }
 
     &__category {
       width: 100%;
+    }
+
+    &__logo {
+      @media (max-width: 820px) {
+        width: 15rem;
+        height: 5rem;
+        // border: 2px solid green;
+        height: 15vh;
+      }
     }
 
     &__navigation {
@@ -52,13 +62,6 @@
               font-weight: $default-weight;
             }
 
-        }
-
-        &-logo {
-          @media (max-width: 820px) {
-            width: 15rem;
-            height: 5rem;
-          }
         }
 
     }

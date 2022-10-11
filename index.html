@@ -38,35 +38,60 @@
 </head>
 <body>
     
-     <div class="main-container row col-md-12 m-auto w-100">
-        <header class="header  container-fluid  d-flex align-items-lg-center d-flex align-items-md-center justify-content-lg-between ">
+     <div class="main-container container-fluid row  m-auto">
+        <header class="header  container-fluid  d-flex align-items-lg-center justify-content-lg-between " id="my-header1-id">
 
-            <nav class="navigation col-lg-10 col-md-12 col-sm-8 d-flex align-items-lg-center justify-content-between m-auto">
-               <div>
-                    <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" alt="logo">
+            <nav class="navigation col-lg-12 col-md-12 col-sm-8 d-flex align-items-lg-center justify-content-between m-auto">
+               <div >
+                    <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" id="logo-img-id" alt="logo">
                </div>
-               <ul class="navigation__list list-unstyled  d-flex">
+               <ul class="navigation__list list-unstyled  d-lg-flex d-md-flex d-block ">
                   <li><a href="#">Home</a></li>
                   <li><a href="#about-me">About Me</a></li>
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#contacts">Contacts</a></li>
                </ul>  
                <!-- Creates resume button -->           
-               <div class="icons list-unstyled d-flex align-items-center ">
+               <div class="navigation__icons list-unstyled d-flex align-items-center ">
                 <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
                 <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
               </div>              
             </nav>
 
+            
+
         </header>
+
+        <header class="  container-fluid  d-flex align-items-lg-center justify-content-lg-between " id="my-header2-id">
+
+          <nav class="navigation col-lg-12 col-md-12 col-sm-8 d-flex align-items-lg-center justify-content-between m-auto">
+             <div>
+                  <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" alt="logo">
+             </div>
+             <ul class="navigation__list list-unstyled  d-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+             </ul>  
+             <!-- Creates resume button -->           
+             <div class="navigation__icons list-unstyled d-flex align-items-center ">
+              <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
+              <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </div>              
+          </nav>
+
+      </header>
+
 
         <main class="w-100">  
 
             <!-- Start Landing Section -->
             <section class="section-landing col-lg-10 col-md-10 ">
                 <div class="landing d-lg-flex  flex-column justify-content-lg-center  m-auto ">
-                   <p class="landing__message">My Motto</p>
+                   <p class="landing__message">My message</p>
                    <p class="landing__text  mt-5">Don`t give up.</p>
                    <p class="landing__author">Positive mindset is the key</p>
                    <p class="landing__long-message mt-5">
@@ -74,19 +99,19 @@
                     That`s when I found out my love for coding.
                   </p>   
                   
-                  <a href="chat-app.html" class="landing__link">Hired Me!</a>
+                  <a href="#contacts" class="landing__link">Download CV</a>
                 </div>
 
-                <div class="experience col-lg-10 col-md-12 d-flex align-items-lg-center justify-content-between m-auto ">
+                <div class="experience col-lg-12 col-md-12 d-flex align-items-lg-center justify-content-between m-auto ">
                     <ul class="list-unstyled col-lg-5 col-md-5  d-flex align-items-lg-center justify-content-between ">
                         <li class="experience__list">
-                          <span class="experience__number">1</span>
+                          <span class="experience__number">4.6</span>
                         </li>
                         <li class="text-left">
                           <span class="experience__sentence ">Years of experience</span>
                         </li>
                         <li class="experience__list">
-                          <span class="experience__number">6</span>
+                          <span class="experience__number">6.0</span>
                         </li>
                         <li>
                           <span class="experience__sentence">Web Programming Laguages</span>
@@ -102,21 +127,31 @@
                     <div class="col-lg-5 d-flex flex-column justify-content-center ">
                         
                         <!-- Design -->
-                        <div class="showcase__design mt-5 p-4">
-                            <div class="showcase__design-header d-flex justify-content-lg-between ">
+                        <div class="showcase__design mt-0 p-lg-4 p-md-4 ">
+                            <div class="showcase__design-header d-flex justify-content-lg-between justify-content-md-between">
                                 <h3 class="showcase__design-title">Design and Tools</h3>
                                 <ion-icon name="brush-outline" class="showcase__design-icons"></ion-icon>
                             </div>
                             <p class="showcase__design-message mt-4">
-                              Application for design and tools for web development
+                              Application for design and tools for web development 
                             </p>
 
-                            <button class="showcase__design-btn mt-5"><code class="showcase__design-code">< application /></code></button>
+                            
+                            <ul class="showcase__design-list list-unstyled mt-4">
+                              <li>Adobe Photoshop cc 2022</li>
+                              <li>Postman</li>
+                              <li>Git Hub</li>
+                           </ul>
+
+                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< application /></code></button>
+                            
+
+
                         </div>
 
                         <!-- Front end Development -->
-                        <div class="showcase__frontend mt-5  p-4">
-                            <div class="showcase__frontend-header d-flex justify-content-lg-between">
+                        <div class="showcase__frontend mt-5  p-lg-4 p-md-4">
+                            <div class="showcase__frontend-header d-flex justify-content-lg-between justify-content-md-between">
                               <h3 class="showcase__frontend-title">Front-End Development</h3>
                               <ion-icon name="code-slash-outline" class="showcase__frontend-icons"></ion-icon>
                             </div>
@@ -125,12 +160,19 @@
                               Languages use for Front-End Development
                             </p>
 
-                            <button class="showcase__design-btn mt-5"><code class="showcase__design-code">< Front-End /></code></button>
+                            <ul class="showcase__design-list list-unstyled mt-4">
+                              <li>HTML 5</li>
+                              <li>CSS 3</li>
+                              <li>Boostrap & SASS</li>
+                              <li>JS</li>
+                            </ul>
+
+                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< Front-End /></code></button>
                         </div>
 
                         <!-- Back end Development -->
                         <div class="showcase__backend mt-5 p-4">
-                            <div class="showcase__backend-header d-flex justify-content-lg-between ">
+                            <div class="showcase__backend-header d-flex justify-content-lg-between justify-content-md-between">
                               <h3 class="showcase__backend-title">Back-End Development</h3>
                               <ion-icon name="cog-outline" class="showcase__backend-icons"></ion-icon>
                             </div>
@@ -139,12 +181,18 @@
                               Languages use for Back-End Development
                             </p>
 
-                            <button class="showcase__design-btn mt-5"><code class="showcase__design-code">< Back-End /></code></button>
+                            <ul class="showcase__design-list list-unstyled mt-4">
+                              <li>Node JS (Express)</li>
+                              <li>PHP</li>
+                           </ul>
+
+
+                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< Back-End /></code></button>
                         </div>
 
                     </div>
                     <div class="col-lg-6 ">
-                          <h3 class="showcase__introduction-header1 pt-md-5 ">Introduce</h3>
+                          <h3 class="showcase__introduction-header1 pt-md-5 ">About Me</h3>
                           <div>
                             <img src="./frontend/public/images/myphotos/IMG_5973 n 2x2.jpg" class="showcase__introduction-photo mt-3" alt="">
                           </div>
@@ -175,7 +223,7 @@
                     <h2 class="project__header text-center mt-5 mb-5">Projects</h2>
                     <div class="project__category d-flex justify-content-around align-items-center  ">
                       <!-- Website Project -->
-                      <div class="project__web p-5">
+                      <div class="project__web p-lg-5 p-md-3">
                         <!-- Start Carousel Animation -->
                           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -216,7 +264,7 @@
                       </div>
 
                       <!-- Web Messenger Application System -->
-                      <div class="project__web  p-5">
+                      <div class="project__web  p-lg-5 p-md-3">
                         <!-- Start Carousel Animation  -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
@@ -258,7 +306,7 @@
                       </div>
 
                       <!-- Web Video Application System -->
-                      <div class="project__web  p-5">
+                      <div class="project__web   p-lg-5 p-md-3">
 
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
@@ -290,7 +338,7 @@
 
                           <h2 class="project__web-title text-center mt-4">Omnifood Project</h2> 
 
-                          <p class="project__web-story text-justify mt-4">Omnifood project is my first website using html5, css3 all the text content is fiction the website purpose is introduce the omnifood app how to subscribe and the importance of omnifood app </p>
+                          <p class="project__web-story text-justify mt-4">Omnifood project is my first website using html5, css3 all the text content is fiction the website purpose is introduce the omnifood app and the reposive layout of website. </p>
                        
                           <div class="d-flex justify-content-center mt-5">
                           <a href="https://reynan-delizo.netlify.app/" target="_blank" class="project__web-btn">Click Me</a>
@@ -306,11 +354,11 @@
             <!-- Start Contact Form Section -->
 
             <section class="section-contact" id="contacts">
-                <div class="contact col-lg-10 col-md-8 m-auto  ">
+                <div class="contact col-lg-10 col-md-8 m-auto ">
 
                    <h2 class="contact__header text-center pt-5 mb-5">Contact Form</h2>
                    <!-- Creates Contact Form Container -->
-                   <div class="contact__container d-flex  justify-content-around ">
+                   <div class="contact__container d-flex  justify-content-around align-content-lg-center align-items-md-center p-lg-5 p-md-3">
  
                       <div class="contact__form  col-lg-5 col-md-10">
                           <h2 class="contact__form-title">Contact Information</h2>
@@ -342,7 +390,7 @@
                           </div>
                       </div>
                       <div class="contact__form col-lg-5 col-md-10">
-                        <h2 class="contact__form-title text-center">Contact Form</h2>
+                        <h2 class="contact__form-title text-center ">Contact Form</h2>
 
                         <div class="contact__formData">
                           <form class="mt-5">
@@ -353,11 +401,11 @@
                               </div>
                           
                             <div class="form-group  pt-3 pb-2">
-                              <label for="inputAddress" class="text-white h4">Address</label>
-                              <input type="text" class="form-control p-4" id="inputAddress" placeholder="1234 Main St">
+                              <label for="inputAddress" class="text-white h4">Contact Number</label>
+                              <input type="text" class="form-control p-4" id="inputAddress" placeholder="+63 000 000 0000">
                             </div>
                             <div class="form-group  pt-3 pb-2">
-                              <label for="inputAddress2" class="text-white h4">Address 2</label>
+                              <label for="inputAddress2" class="text-white h4">Address </label>
                               <input type="text" class="form-control p-4" id="inputAddress2" placeholder="Apartment, studio, or floor">
                             </div>
                             <div class="form-row  pt-3 pb-2">
@@ -380,8 +428,32 @@
                             </div>
                             <div class="form-group">
                             </div>
-                            <button type="submit" class="btn btn-primary pl-5 pr-5 pt-3 pb-3 border-0">Sign in</button>
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-dark btn btn-primary pl-5 pr-5 pt-3 pb-3 border-0" data-toggle="modal" data-target="#exampleModal">
+                                Send Email
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting Us!</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Message Successful Sent
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                           </form>
+
                         </div>
                       </div>
                    </div>
@@ -392,7 +464,7 @@
         </main>
 
         <footer class="section-footer col-lg-12 ">
-            <div class="footer col-lg-10 col-md-10 col-8 m-auto d-flex align-items-lg-center align-items-md-center">
+            <div class="footer col-lg-12 col-md-12 col-8 m-auto d-flex align-items-lg-center align-items-md-center">
                 <div class="footer__category d-flex align-items-lg-center align-items-md-center">   
                    <div class="footer__navigation col-lg-5 col-md-5 ">
                       <ul class="footer__navigation-list list-unstyled  d-flex">
@@ -405,11 +477,11 @@
                       <div class="footer__navigation-icons list-unstyled d-flex align-items-center justify-content-start pl-4 ">
                         <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
                         <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                       </div>                              
                     </div>
 
-                    <div class="footer__navigation-logo d-flex justify-content-start" >
+                    <div class="footer__logo d-flex justify-content-start" >
                       <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" alt="logo">
                     </div>
 
@@ -422,8 +494,12 @@
         </footer>
      </div> 
 
+  <!-- JS external -->
+
+  <script src="./frontend/public/js/app.js"> </script>
+
   <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
+  
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>

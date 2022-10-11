@@ -3,8 +3,25 @@
   &{
     color: $color-white;
     height: 13vh;
+    display: block !important;
   }
 
+  
 
+}
 
+#my-header2-id {
+  display: none !important;
+  background-color: rgba(7, 0, 0, 0.9) !important;
+  position: sticky;
+  top: 0;
+  padding: 1rem 0 1rem 0;
+  z-index: 100;
+  box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+}
+
+#my-header1-id {
+  padding: 1rem 0 1rem 0;
 }
