@@ -6,6 +6,7 @@
     // border: 2px solid orange;
     @media (max-width: 820px) {
       height: 60vh;
+      // border: 2px solid green;
     }
   }
 
@@ -13,6 +14,12 @@
     font-size: $large-font-size;
     color: $color-white;
     font-weight: $default-weight;
+
+    @media (max-width: 544px) {
+      font-weight: $verysmall-font-size;
+      // border:2px solid #fff;
+    }
+    
   }
 
   &__container {
@@ -20,7 +27,69 @@
     @media (max-width: 820px) {
       // border: 5px solid violet;
       height: 50vh;
+      width: 100%;
     }
+  }
+
+  &__information {
+
+    height: 60vh;
+    @media (max-width: 820px) {
+      // border: 5px solid yellow;
+      height: 40vh;
+    }
+
+    @media (max-width: 544px) {
+      // border: 5px solid yellow;
+      height: 50vh !important;
+
+    }
+
+    &-title {
+      font-size: $mid-font-size;
+      color: $color-white;
+
+      @media (max-width: 820px) {
+        font-size: 2rem;
+      }
+
+
+    }
+
+    &-message {
+      font-size: 18px;
+      color: #e9ecef;
+
+      @media (max-width: 820px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-icons {
+      color: #e9ecef;
+      font-size: 2rem;
+      @media (max-width: 820px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &-map-container {
+      height: 80vh;
+    }
+
+    &-map {
+      width: 100%;
+      height: 30vh;
+      border-radius: 25px;
+
+      @media (max-width: 820px) {
+        width: 100%;
+        height: 15vh;
+        border-radius: 25px;
+      }
+
+    }
+
   }
 
   &__form {
@@ -29,6 +98,12 @@
     @media (max-width: 820px) {
       // border: 5px solid yellow;
       height: 40vh;
+    }
+
+    @media (max-width: 544px) {
+      // border: 5px solid yellow;
+      height: 70vh !important;
+
     }
 
     &-title {

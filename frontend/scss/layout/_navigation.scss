@@ -3,6 +3,22 @@
      font-size: $default-font-size;      
     }
 
+    &__btn {
+      display: none;
+
+          @media (max-width: 544px) {
+            display: block !important;
+        }
+      &-togle {
+        display: none;
+          @media (max-width: 544px) {
+            display: block !important;
+            border: none;
+            outline: none;
+        }
+      }
+
+    }
 
     &__logo{ 
       width: 18rem;

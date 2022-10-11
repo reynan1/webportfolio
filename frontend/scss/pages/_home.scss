@@ -10,7 +10,9 @@
 .section-showcase {
   height: 100vh !important;
   background-color: #212123;
-
+  @media (max-width: 544px) {
+    height: 140vh !important;
+  }
 }
 
 .section-project {
@@ -18,14 +20,22 @@
   @media (max-width: 820px) {
     height: 60vh !important; 
   }
+
+  @media (max-width: 544px) {
+    height: 155vh !important; 
+  }
 }
 
 .section-contact {
-  height: 100vh !important;
+  height: 110vh !important;
   background-color: #212123;
 
   @media (max-width: 820px) {
     height: 60vh !important; 
+  }
+
+  @media (max-width: 544px) {
+    height: 140vh !important; 
   }
 }
 
@@ -34,5 +44,9 @@
 
   @media (max-width: 820px) {
     height: 20vh !important; 
+  }
+
+  @media (max-width: 544px) {
+    height: 25vh !important; 
   }
 }

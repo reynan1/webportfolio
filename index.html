@@ -40,11 +40,14 @@
     
      <div class="main-container container-fluid row  m-auto">
         <header class="header  container-fluid  d-flex align-items-lg-center justify-content-lg-between " id="my-header1-id">
-
+            
             <nav class="navigation col-lg-12 col-md-12 col-sm-8 d-flex align-items-lg-center justify-content-between m-auto">
                <div >
                     <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" id="logo-img-id" alt="logo">
-               </div>
+                    <button class="navition__btn border-0">
+                       <ion-icon name="reorder-three-outline" class="navigation__btn-togle"></ion-icon>
+                    </button>
+               </div> 
                <ul class="navigation__list list-unstyled  d-lg-flex d-md-flex d-block ">
                   <li><a href="#">Home</a></li>
                   <li><a href="#about-me">About Me</a></li>
@@ -58,9 +61,6 @@
                 <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
               </div>              
             </nav>
-
-            
-
         </header>
 
         <header class="  container-fluid  d-flex align-items-lg-center justify-content-lg-between " id="my-header2-id">
@@ -95,14 +95,14 @@
                    <p class="landing__text  mt-5">Don`t give up.</p>
                    <p class="landing__author">Positive mindset is the key</p>
                    <p class="landing__long-message mt-5">
-                    You don`t make something your passion, It happens.<br />
+                    You don`t make something your passion, It happens
                     That`s when I found out my love for coding.
                   </p>   
                   
                   <a href="#contacts" class="landing__link">Download CV</a>
                 </div>
 
-                <div class="experience col-lg-12 col-md-12 d-flex align-items-lg-center justify-content-between m-auto ">
+                <div class="experience col-lg-12 col-md-12 d-flex align-items-lg-center justify-content-between m-lg-auto m-md-auto  ">
                     <ul class="list-unstyled col-lg-5 col-md-5  d-flex align-items-lg-center justify-content-between ">
                         <li class="experience__list">
                           <span class="experience__number">4.6</span>
@@ -124,10 +124,10 @@
             <!-- Start Experience Section -->
             <section class="section-showcase" id="about-me">
                 <div class="showcase container-fluid row col-lg-10 d-flex flex-column justify-content-center  m-auto">
-                    <div class="col-lg-5 d-flex flex-column justify-content-center ">
+                    <div class="col-lg-5 d-lg-flex d-md-flex flex-column justify-content-center ">
                         
                         <!-- Design -->
-                        <div class="showcase__design mt-0 p-lg-4 p-md-4 ">
+                        <div class="showcase__design mt-0 p-lg-4 p-md-4 p-4 ">
                             <div class="showcase__design-header d-flex justify-content-lg-between justify-content-md-between">
                                 <h3 class="showcase__design-title">Design and Tools</h3>
                                 <ion-icon name="brush-outline" class="showcase__design-icons"></ion-icon>
@@ -150,7 +150,7 @@
                         </div>
 
                         <!-- Front end Development -->
-                        <div class="showcase__frontend mt-5  p-lg-4 p-md-4">
+                        <div class="showcase__frontend mt-5  p-lg-4 p-md-4 p-4">
                             <div class="showcase__frontend-header d-flex justify-content-lg-between justify-content-md-between">
                               <h3 class="showcase__frontend-title">Front-End Development</h3>
                               <ion-icon name="code-slash-outline" class="showcase__frontend-icons"></ion-icon>
@@ -191,7 +191,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6 ">
+                    <div class="showcase__introduction col-lg-6 d-block ">
                           <h3 class="showcase__introduction-header1 pt-md-5 ">About Me</h3>
                           <div>
                             <img src="./frontend/public/images/myphotos/IMG_5973 n 2x2.jpg" class="showcase__introduction-photo mt-3" alt="">
@@ -218,12 +218,12 @@
 
             <!-- Start Project Section -->
             <section class="section-project " id="projects">
-                <div class="project container-fluid col-lg-10 m-auto">
+                <div class="project container-fluid ">
 
                     <h2 class="project__header text-center mt-5 mb-5">Projects</h2>
-                    <div class="project__category d-flex justify-content-around align-items-center  ">
+                    <div class="project__category d-lg-flex d-md-flex justify-content-around align-items-center  ">
                       <!-- Website Project -->
-                      <div class="project__web p-lg-5 p-md-3">
+                      <div class="project__web p-lg-5 p-md-3 p-5 mt-5">
                         <!-- Start Carousel Animation -->
                           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -264,7 +264,7 @@
                       </div>
 
                       <!-- Web Messenger Application System -->
-                      <div class="project__web  p-lg-5 p-md-3">
+                      <div class="project__web  p-lg-5 p-md-3 p-5  mt-5">
                         <!-- Start Carousel Animation  -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
@@ -306,7 +306,7 @@
                       </div>
 
                       <!-- Web Video Application System -->
-                      <div class="project__web   p-lg-5 p-md-3">
+                      <div class="project__web   p-lg-5 p-md-3 p-5  mt-5">
 
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
@@ -354,13 +354,13 @@
             <!-- Start Contact Form Section -->
 
             <section class="section-contact" id="contacts">
-                <div class="contact col-lg-10 col-md-8 m-auto ">
+                <div class="contact col-lg-10 col-md-12 m-auto ">
 
                    <h2 class="contact__header text-center pt-5 mb-5">Contact Form</h2>
                    <!-- Creates Contact Form Container -->
-                   <div class="contact__container d-flex  justify-content-around align-content-lg-center align-items-md-center p-lg-5 p-md-3">
+                   <div class="contact__container row col-lg-12 col-md-12 d-lg-flex d-md-flex d-sm-flex   justify-content-around align-content-lg-center align-items-md-center p-lg-5 p-md-3 m-auto">
  
-                      <div class="contact__form  col-lg-5 col-md-10">
+                      <div class="contact__information col-lg-5 col-md-6 col-12 order-lg-1 order-md-1 order-2 ">
                           <h2 class="contact__form-title">Contact Information</h2>
                           
                           <p class="contact__form-message text-justify mt-5">To contact me kindly fill up the form to discuss you query to me and give a solution to your problem in business using web development.</p>
@@ -389,7 +389,7 @@
                              
                           </div>
                       </div>
-                      <div class="contact__form col-lg-5 col-md-10">
+                      <div class="contact__form  col-lg-5 col-md-6 col-12 order-lg-2 order-md-2 order-1 mt-5">
                         <h2 class="contact__form-title text-center ">Contact Form</h2>
 
                         <div class="contact__formData">
@@ -463,29 +463,29 @@
             <!-- End Contact Form Section -->
         </main>
 
-        <footer class="section-footer col-lg-12 ">
-            <div class="footer col-lg-12 col-md-12 col-8 m-auto d-flex align-items-lg-center align-items-md-center">
-                <div class="footer__category d-flex align-items-lg-center align-items-md-center">   
-                   <div class="footer__navigation col-lg-5 col-md-5 ">
-                      <ul class="footer__navigation-list list-unstyled  d-flex">
+        <footer class="section-footer col-lg-12">
+            <div class="footer col-lg-12 col-md-12 col-12 m-auto d-flex align-items-lg-center align-items-md-center">
+                <div class="footer__category col-lg-12 col-md-12 col-12 d-lg-flex d-md-flex align-items-lg-center align-items-md-center">   
+                   <div class="footer__navigation col-lg-4 col-md-4 col-12 ">
+                      <ul class="footer__navigation-list list-unstyled  d-lg-flex d-md-flex d-flex col-lg-4 col-md-4 col-12 pl-lg-4 pl-md-4">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Me</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contacts</a></li>
                       </ul>  
                       <!-- Creates resume button -->           
-                      <div class="footer__navigation-icons list-unstyled d-flex align-items-center justify-content-start pl-4 ">
+                      <div class="footer__navigation-icons list-unstyled d-flex align-items-center justify-content-start pl-lg-4 pl-md-4 ">
                         <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
                         <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
                         <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                       </div>                              
                     </div>
 
-                    <div class="footer__logo d-flex justify-content-start" >
-                      <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" alt="logo">
+                    <div class="footer__logo d-lg-flex d-md-flex justify-content-start mt-5 col-lg-4 col-md-4" >
+                      <img src="./frontend/public/images/projects/logo.png" class="footer__navigation-logo" alt="logo">
                     </div>
 
-                    <div class="footer__navigation-message pt-5">
+                    <div class="footer__navigation-message col-lg-4 col-md-4 pt-lg-5 pt-md-3 pt-2 mt-5">
                       Built my REYNAN DELIZOfor his online ADVANCE CSS AND SASS. Copyright © by: Reynan Delizo. You are 100% allowed to use this webpage for both personal and commercial use, but not to claim it is your own design. A credit to the original author, Reynan Delizo, is of course highly appreciated!
                     </div>
 
