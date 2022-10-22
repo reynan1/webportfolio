@@ -518,11 +518,11 @@
     /*********************************/
 
     .footer {
-      border: 2px solid green;
+      /* border: 2px solid green; */
     }
 
     .footer__container {
-      border: 2px solid violet;
+   /*    border: 2px solid violet; */
       gap: 0rem !important;
     }
 
@@ -706,6 +706,8 @@
   /*********************************/
   /*    PROJECT SECTION    */
   /*********************************/
+
+
   .project-section {
    /*  border: 2px solid violet; */
     width: 96% !important;
@@ -747,7 +749,9 @@
     width: 30rem !important;
   }
 
-  /* EXPERIENCE */
+  /*********************************/
+  /*    EXPERIENCE   */
+  /*********************************/
 
   .work__experience-section {
 /*  border: 2px solid violet; */
@@ -821,5 +825,60 @@
    .my-form{
     height: 65vh!important;
    }
+
+  /*********************************/
+  /*    FOOTER   */
+  /*********************************/
+
+
+   .footer {
+    width: 100% !important;
+    height: 100vh !important;
+   }
+
+   .footer__container{
+/*     border: 2px solid orange; */
+    height: 80vh !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr!important;
+   }
+
+   .footer__logo{
+    width: 13%;
+    display: none;
+    /*   border: 2px solid green; */
+  }
+
+  .footer__logo-mobile{
+    text-align: center;    
+    padding-top: 3rem;
+  }
+
+  .footer-icons-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+  }
+
+   .footer__contacts,
+   .footer__experience,
+   .footer__project,
+   .footer__about-me,
+   .footer__landing-pages {
+    width: 100% !important;
+/*     border:2px solid green; */
+  }
+
+  .footer__paragraph{
+    line-height: 1.8 !important;
+  }
+
+  .footer-copyright{
+/*     border: 2px solid red;  */
+    width: 80% !important;
+    margin: 2rem auto 5rem auto !important;
+  }
 
 }
