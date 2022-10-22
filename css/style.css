@@ -729,6 +729,12 @@
   color: #55c57a;
   display: inline-block;
   margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.footer-anchor:hover {
+  color:#40c057;
+  text-decoration: none;
 }
 
 .footer__paragraph {

@@ -512,6 +512,20 @@
     .form-btn{
       width: 40% !important;
     }
+
+    /*********************************/
+    /*            FOOTER             */
+    /*********************************/
+
+    .footer {
+      border: 2px solid green;
+    }
+
+    .footer__container {
+      border: 2px solid violet;
+      gap: 0rem !important;
+    }
+
 }  
 
 
@@ -535,7 +549,7 @@
 /**************************/
 
   .landing__container {
-/*     border: 2px solid red; */
+   /*  border: 2px solid red; */
     height: 80vh !important;
   }
 
@@ -582,14 +596,14 @@
   }
 
   .experience-number__container {
-  /*   border: 2px solid green;  */
+   /*  border: 2px solid green;  */
     height: 5vh !important;
     width: 100% !important;
     margin-top: 4.5rem !important;
   }
 
   .experience__languages {
-    margin-left: 13rem !important;
+    margin-left: 17rem !important;
     margin-right: 0.5rem; 
   }
 
@@ -601,15 +615,15 @@
     font-size: 1.2rem;
     line-height: 1.3;
     position: absolute;
-    width: 30% !important;
- /*    border: 2px solid red; */
+    width: 20% !important;
+/*     border: 2px solid red; */
   }
   
   .language__experience {
     font-size: 1.2rem;
     line-height: 1.3;
     position: absolute;
-    width: 50% !important;
+    width: 40% !important;
   }
 
 /**************************/
@@ -693,18 +707,19 @@
   /*    PROJECT SECTION    */
   /*********************************/
   .project-section {
-/*     border: 2px solid violet; */
+   /*  border: 2px solid violet; */
     width: 96% !important;
     height: 170vh;
   }
 .work__container{
   width:  100% !important;
+  margin: 0 !important;
 }
 
   .work__message {
-/*       border: 2px solid red; */
-      margin-top: 5rem;
-      width: 100% !important;
+   /*    border: 2px solid red; */
+      margin: 0rem auto;
+      width: 90% !important;
       height: 20vh !important;
   }
 
@@ -737,7 +752,7 @@
   .work__experience-section {
 /*  border: 2px solid violet; */
     width: 98% !important;
-    height: 160vh !important;
+    height: 130vh !important;
     margin: auto;
     display: flex;
     align-items: center;
@@ -745,7 +760,7 @@
 
   .experience__container{
 /*  border: 2px solid green; */
-    height: 125vh !important;
+    height: 120vh !important;
   }
 
   .experience__title{
@@ -780,5 +795,31 @@
     font-size: 1.4rem !important;
     letter-spacing: 1.2px !important;
   }
+
+   /* contacts*/
+   .contact-section{
+/*     border: 2px solid violet; */
+    height: 170vh !important;
+   } 
+
+   .contact__container{
+    height: 170vh !important;
+   }
+
+   .contact__details {
+/*     border: 2px solid orange; */
+    grid-template-columns: 1fr !important;
+    height: 165vh !important;
+   }
+
+   .contact__email,.contact__phone,.contact__chat {
+    width: 100% !important;
+    height: 25vh!important;
+    border-radius: 20px !important;
+   }
+
+   .my-form{
+    height: 65vh!important;
+   }
 
 }
