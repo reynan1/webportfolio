@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
   
   <!-- Ionicons -->
-  <script
-   type="module"
-   src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-   ></script>
-  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
   <!-- Google Font Comic Neue-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,485 +29,407 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+  <!-- Queries CSS -->
+  <link rel="stylesheet" href="./css/queries.css">
 
-
-  <!-- External CSS -->  
-  <link rel="stylesheet" href="./frontend/public/css/index.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./css/style.css"> 
+  
+  <!-- General Style CSS -->  
+  <link rel="stylesheet" href="./css/general.css">
  
   <title>Reynan Delizo</title>
 </head>
 <body>
-    
-     <div class="main-container container-fluid row m-auto">
-        <header class="header  container-fluid col-12  d-flex align-items-lg-center justify-content-lg-between " id="my-header1-id">
-            
-            <nav class="navigation col-lg-12 col-md-12 col-sm-12 col-12 d-lg-flex d-md-flex align-items-lg-center justify-content-between m-lg-auto m-md-auto ">
-               <div class="navigation__header-logo d-flex  justify-content-between align-items-center">
-                    <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" id="logo-img-id" alt="logo">
-                    <button class="navition__btn border-0 toggle-btn" id="">
-                       <ion-icon name="reorder-three-outline" class="navigation__btn-togle"></ion-icon>
-                    </button>
-                    <button class="navigation__close-btn  border-0 close-btn-id" id="">
-                       <ion-icon name="close-outline" class="navigation__close-togle"></ion-icon>
-                    </button>
-               </div> 
-               <ul class="navigation__list list-unstyled d-flex navigation-id" id="">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about-me">About Me</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contacts">Contacts</a></li>
-               </ul>  
-               <!-- Creates resume button -->           
-               <div class="navigation__icons list-unstyled d-flex align-items-center ">
-                <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
-                <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-              </div>              
-            </nav>
-        </header>
 
-        <header class="  container-fluid col-12  d-flex align-items-lg-center justify-content-lg-between " id="my-header2-id">
 
-          <nav class="navigation navigation1  col-lg-12 col-md-12 col-sm-12 col-12  d-md-flex align-items-lg-center justify-content-between m-lg-auto m-md-auto">
-            <div class="navigation__header-logo  d-flex  justify-content-between align-items-center">
-                <img src="./frontend/public/images/projects/logo.png" class="navigation__logo" id="logo-img-id" alt="logo">
+  <!-- parent container -->
+ 
+      <div class="root ">
+      <header class="header" >
+          <!-- start navigation logo container  -->
+          <a href="#" class="header__logo  ">
+            <img src="./img/logo.png" class="main-logo" alt="logo-project">
+          </a>
+          <!-- end navigation logo container -->
+          
+          <!-- start navigation  -->
+          <nav class="navigation">
+            <ul class="navigation__list list-unstyled  ">
+              <li><a href="#" class="anchor-link">Home</a></li>
+              <li><a href="#about-me-id" class="anchor-link">About Me</a></li>
+              <li><a href="#project-container-id" class="anchor-link">Projects</a></li>              
+              <li><a href="#work-experience-id" class="anchor-link">Experience</a></li>
+          <!--     <li><a href="#" class="anchor-link">Gallery</a></li> -->
+              <li><a href="#contact-id" class="anchor-link">Let`s Talk</a></li>
+            </ul>
+          </nav>      
+           <!-- end navigation  -->
+              
+           <!-- start navigation icons -->
+        
+          <ul class="header__icon-list list-unstyled  h-100 d-flex  align-items-center ">
+             <li>
+               <a href="https://github.com/reynan1?tab=repositories" class="font-icons-link"><ion-icon name="logo-github" class="heading-icons"></ion-icon></a>
+            </li>
+            <li>
+               <a href="#" class="font-icons-link"><ion-icon name="logo-facebook" class="heading-icons"></ion-icon></a>
+            </li>
+            <li>
+               <a href="#" class="font-icons-link"><ion-icon name="logo-linkedin" class="heading-icons"></ion-icon></a>
+            </li>
+          </ul>
+          
+           <!-- end navigation icons -->
 
-                <button class="navition__btn border-0 toggle-btn1">
-                  <ion-icon name="reorder-three-outline" class="navigation__btn-togle"></ion-icon>
-                </button>
-
-                <button class="navigation__close-btn  border-0 close-btn-id1" >
-                  <ion-icon name="close-outline" class="navigation__close-togle"></ion-icon>
-                </button>
-            </div>
-             <ul class="navigation__list navigation__list1  list-unstyled  d-flex navigation-id1" id="">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-             </ul>  
-             <!-- Creates resume button -->           
-             <div class="navigation__icons list-unstyled d-flex align-items-center ">
-              <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
-              <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-              <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            </div>              
-          </nav>
-
+           <!-- toggle btn for mobile -->
+          
+           <button class="header__btn-mobile-nav">
+              <ion-icon class="header__icon-mobile-nav" name="menu-outline"></ion-icon>
+              <ion-icon class="header__icon-mobile-nav" name="close-outline"></ion-icon>
+           </button>
+          
+           <!-- end toggle btn for mobile -->
       </header>
 
+      <!-- main content -->
+      <main class="d-flex flex-column" >
+          <!-- Start landing section -->
+          <section class="landing-section">
+               <div class="landing__container ">
+                    <div class="landing__message">
+                        <span class="heading__quarterly">Hi, my name is</span>
+                        <p class="heading__primary">Reynan Delizo.</p>
+                        <p class="heading__primary">I made things for the web.</p>
+                        <blockquote class="heading__quinary">An enthusiastic person with a great passion toward Web development and posses an extensive knowledge through front-end and back-end development</blockquote>
+                        <a href="#" class="heading__link" class="heading__animation"> 
+                          <span></span>  
+                          <span></span>  
+                          <span></span>  
+                          <span></span>
+                            Download CV 
+                           <ion-icon name="cloud-download-outline"></ion-icon>
+                   
+                        </a>
+                    </div>
+                    <div class="landing-img-icons__layout">
+                        <div class="landing__img">
+                            <img src="./img/reynan.png" class="reynan__img" alt="reynan-big-img">
+                            <img src="./img/reynan2.png" class="reynan-circular__img" alt="reynan-circular-img">
+                        </div>
+                    </div>
+               </div>
+               <div class="experience-number__container">
+                    <div>
+                        <span class="heading__primary number__experience">3.10</span>
+                        <span class="year-experience">Years Of Experiece</span>
+                        <span class="heading__primary experience__languages">6.0</span>
+                        <span class="language__experience">Web Programming Languages</span> 
+                    </div>
+               </div>
+          </section>
+          <!-- End of landing section -->
 
-        <main class="w-100">  
-
-            <!-- Start Landing Section -->
-            <section class="section-landing col-lg-10 col-md-10 ">
-                <div class="landing d-lg-flex  flex-column justify-content-lg-center  m-auto ">
-                   <p class="landing__message">My message</p>
-                   <p class="landing__text  mt-5">Don`t give up.</p>
-                   <p class="landing__author">Positive mindset is the key</p>
-                   <p class="landing__long-message mt-5">
-                    You don`t make something your passion, It happens
-                    That`s when I found out my love for coding.
-                  </p>   
-                  
-                  <a href="#contacts" class="landing__link">Hire me</a>
-                </div>
-
-                <div class="experience col-lg-12 col-md-12 d-flex align-items-lg-center justify-content-between m-lg-auto m-md-auto  ">
-                    <ul class="list-unstyled col-lg-5 col-md-5  d-flex align-items-lg-center justify-content-between ">
-                        <li class="experience__list">
-                          <span class="experience__number">4.6</span>
-                        </li>
-                        <li class="text-left">
-                          <span class="experience__sentence ">Years of experience</span>
-                        </li>
-                        <li class="experience__list">
-                          <span class="experience__number">6.0</span>
-                        </li>
-                        <li>
-                          <span class="experience__sentence">Web Programming Laguages</span>
-                        </li>
-                      </ul>
-                </div>
-            </section>
-            <!-- End Landing Section -->
-
-            <!-- Start Experience Section -->
-            <section class="section-showcase" id="about-me">
-                <div class="showcase container-fluid row col-lg-10 d-flex flex-column justify-content-center  m-auto">
-                    <div class="col-lg-5 d-lg-flex d-md-flex flex-column justify-content-center ">
-                        
-                        <!-- Design -->
-                        <div class="showcase__design mt-0 p-lg-4 p-md-4 p-4 ">
-                            <div class="showcase__design-header d-flex justify-content-lg-between justify-content-md-between">
-                                <h3 class="showcase__design-title">Design and Tools</h3>
-                                <ion-icon name="brush-outline" class="showcase__design-icons"></ion-icon>
-                            </div>
-                            <p class="showcase__design-message mt-4">
-                              Application for design and tools for web development 
-                            </p>
-
+          <!-- Start of Showcase section -->
+           <section class="showcase-section">
+                <div class="showcase__container" id="about-me-id">
+              
+                   <div class="skills ">
+                        <div class="skill__design">
+                           <div class="d-flex justify-content-between">
+                             <h3 class="heading__skills">&lt; Design and Tools /&gt;</h3>
+                             <ion-icon class="heading__skills-icons" name="pencil-outline"></ion-icon>
+                           </div>
                             
-                            <ul class="showcase__design-list list-unstyled mt-4">
-                              <li>Adobe Photoshop cc 2022</li>
+                           <p class="heading__paragraph">Application for design and tools for web development</p>
+
+                           <ul class="skill__list list-unstyled">
+                              <li>Adobe Photoshop CC 2022</li>
+                              <li>Adobe Illustrator CC 2020</li>
+                              <li>GitHub</li>
                               <li>Postman</li>
-                              <li>Git Hub</li>
                            </ul>
 
-                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< application /></code></button>
-                            
-
-
                         </div>
+                        <div class="skill__frontend">
+                           <div class="d-flex justify-content-between">
+                             <h3 class="heading__skills">&lt; Front-End Development /&gt;</h3> 
+                             <ion-icon class="heading__skills-icons" name="code-slash-outline"></ion-icon>
+                           </div>
+                           
+                           <p class="heading__paragraph">Languages use for Front-End Development</p>
 
-                        <!-- Front end Development -->
-                        <div class="showcase__frontend mt-5  p-lg-4 p-md-4 p-4">
-                            <div class="showcase__frontend-header d-flex justify-content-lg-between justify-content-md-between">
-                              <h3 class="showcase__frontend-title">Front-End Development</h3>
-                              <ion-icon name="code-slash-outline" class="showcase__frontend-icons"></ion-icon>
-                            </div>
-
-                            <p class="showcase__frontend-message mt-4">
-                              Languages use for Front-End Development
-                            </p>
-
-                            <ul class="showcase__design-list list-unstyled mt-4">
+                           <ul class="skill__list list-unstyled">
                               <li>HTML 5</li>
                               <li>CSS 3</li>
-                              <li>Boostrap & SASS</li>
-                              <li>JS</li>
-                            </ul>
-
-                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< Front-End /></code></button>
-                        </div>
-
-                        <!-- Back end Development -->
-                        <div class="showcase__backend mt-5 p-4">
-                            <div class="showcase__backend-header d-flex justify-content-lg-between justify-content-md-between">
-                              <h3 class="showcase__backend-title">Back-End Development</h3>
-                              <ion-icon name="cog-outline" class="showcase__backend-icons"></ion-icon>
-                            </div>
-
-                            <p class="showcase__backend-message mt-4">
-                              Languages use for Back-End Development
-                            </p>
-
-                            <ul class="showcase__design-list list-unstyled mt-4">
-                              <li>Node JS (Express)</li>
-                              <li>PHP</li>
+                              <li>JavaScript</li>
+                              <li>SCSS</li>
+                              <li>Bootstrap</li>
                            </ul>
 
-
-                            <button class="showcase__design-btn mt-2"><code class="showcase__design-code">< Back-End /></code></button>
                         </div>
+                        <div class="skill__backend">
+                          <div class="d-flex justify-content-between">
+                            <h3 class="heading__skills">&lt; Back-End Development /&gt;</h3>
+                            <ion-icon class="heading__skills-icons" name="cog-outline"></ion-icon>
+                          </div> 
 
-                    </div>
-                    <div class="showcase__introduction col-lg-6 d-block ">
-                          <h3 class="showcase__introduction-header1 pt-md-5 ">About Me</h3>
-                          <div>
-                            <img src="./frontend/public/images/myphotos/IMG_5973 n 2x2.jpg" class="showcase__introduction-photo mt-3" alt="">
-                          </div>
-                          <h1 class="showcase__introduction-name mt-4">
-                            Hello! I`am Reynan Delizo
-                          </h1>
-                          <p class="showcase__introduction-message  mt-5">
-                            Every great design begin with postive mindset and hardwork
-                          </p>
+                          <p class="heading__paragraph">Languages use for Back-End Development</p>
 
-                          <p class="showcase__introduction-story mt-5">
-                            Reynan Delizo is an IT Staff who gained extensive knowledged about web development using HTML5, CSS3, SCSS, JS, Node JS And PHP  
-                            Whenever I looked back, it was like only yesterday that I challeged myself at work to create my own web project.
-                            Since that moment on, I find myself having this desire to work in web development.
-                            It is now leading me to this desire to make this passion as my profession.
-                            I love to learn new things. 
-                            I don't want to give up.
-                          </p>
-                    </div>
-                </div>
-            </section>
-            <!-- End Experience Section -->
-
-            <!-- Start Project Section -->
-            <section class="section-project " id="projects">
-                <div class="project container-fluid ">
-
-                    <h2 class="project__header text-center mt-5 mb-5">Projects</h2>
-                    <div class="project__category d-lg-flex d-md-flex justify-content-around align-items-center  ">
-                      <!-- Website Project -->
-                      <div class="project__web p-lg-5 p-md-3 p-5 mt-5">
-                        <!-- Start Carousel Animation -->
-                          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./frontend/public/images/projects/gogocaffee1.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./frontend/public/images/projects/gogocaffee2.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./frontend/public/images/projects/gogocaffee3.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </button>
-                          </div>
-                          <!-- End Carousel Animation -->
-                          
-                           <h2 class="project__web-title text-center mt-4">Gogocaffee Project</h2> 
-
-                           <p class="project__web-story text-justify mt-4">Gogocaffee project is a coffee shop website this is my first website that I build using HTML5, CSS3, SCSS and JS I created because I love to drink coffee so I created this website.</p>
-                          
-                           <div class="d-flex justify-content-center mt-5">
-                           <a href="https://gogocaffee.netlify.app/" target="_blank" class="project__web-btn">Click Me</a>
-                          </div>
-
-                      </div>
-
-                      <!-- Web Messenger Application System -->
-                      <div class="project__web  p-lg-5 p-md-3 p-5  mt-5">
-                        <!-- Start Carousel Animation  -->
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                          <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                          </ol>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="./frontend/public/images/projects/natures1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./frontend/public/images/projects/natures2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./frontend/public/images/projects/natures3.png" class="d-block w-100" alt="...">
-                            </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </button>
-                        </div>
-                        
-                        <!-- End Carousel Animation  -->
-
-                        <h2 class="project__web-title text-center mt-4">Natures Project</h2> 
-
-                        <p class="project__web-story text-justify mt-4">Nature project is my first website that I build with SCSS framework this website the features of this website are animation, nice division layout and nice nature images.</p>
-                       
-                        <div class="d-flex justify-content-center mt-5">
-                        <a href="https://natureturs.netlify.app/" target="_blank" class="project__web-btn">Click Me</a>
-                       </div>
-
-                      </div>
-
-                      <!-- Web Video Application System -->
-                      <div class="project__web   p-lg-5 p-md-3 p-5  mt-5">
-
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                          <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                          </ol>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="./frontend/public/images/projects/omnifood1.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./frontend/public/images/projects/omnifood2.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./frontend/public/images/projects/omnifood3.png" class="d-block w-100" alt="...">
-                            </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </button>
-                        </div>
-                          <!-- End Carousel Animation  -->
-
-                          <h2 class="project__web-title text-center mt-4">Omnifood Project</h2> 
-
-                          <p class="project__web-story text-justify mt-4">Omnifood project is my first website using html5, css3 all the text content is fiction the website purpose is introduce the omnifood app and the reposive layout of website. </p>
-                       
-                          <div class="d-flex justify-content-center mt-5">
-                          <a href="https://reynan-delizo.netlify.app/" target="_blank" class="project__web-btn">Click Me</a>
-                         </div>
-
-                      </div>
-                  </div>
-                </div>
-            </section>
-
-            <!-- End Project Section -->
-
-            <!-- Start Contact Form Section -->
-
-            <section class="section-contact" id="contacts">
-                <div class="contact col-lg-10 col-md-12 m-auto ">
-
-                   <h2 class="contact__header text-center pt-5 mb-5">Contact Form</h2>
-                   <!-- Creates Contact Form Container -->
-                   <div class="contact__container row col-lg-12 col-md-12 d-lg-flex d-md-flex d-sm-flex   justify-content-around align-content-lg-center align-items-md-center p-lg-5 p-md-3 m-auto">
- 
-                      <div class="contact__information col-lg-5 col-md-6 col-12 order-lg-1 order-md-1 order-2 ">
-                          <h2 class="contact__form-title">Contact Information</h2>
-                          
-                          <p class="contact__form-message text-justify mt-5">To contact me kindly fill up the form to discuss you query to me and give a solution to your problem in business using web development.</p>
-                          
-                          <div>
-
-                            <div class="d-flex align-items-lg-center mt-5">
-                              <ion-icon name="call-outline" class="contact__form-icons mr-4"></ion-icon>
-                              <span class="contact__form-message">+63 999 570 5503</span>
-                            </div>
-
-                            <div class="d-flex align-items-lg-center mt-5">
-                              <ion-icon name="mail-outline" class="contact__form-icons mr-4"></ion-icon>
-                              <span class="contact__form-message">Nandelizo2@gmail.com</span>
-                            </div>
-
-                            <div class="d-flex align-items-lg-center mt-5">
-                              <ion-icon name="location-outline" class="contact__form-icons mr-4"></ion-icon>
-                              <span class="contact__form-message">Brgy. Malamig Binan Laguna</span>
-                            </div>
-                            
-
-                            <div class="mt-5">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.8090460517133!2d121.05917869999999!3d14.264355799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7d5e62432759%3A0xb7e4dc6ce6edb43b!2sLaguna%20Technopark%2C%20Inc.!5e0!3m2!1sen!2sph!4v1665455625906!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact__form-map"></iframe>
-                            </div>
-                             
-                          </div>
-                      </div>
-                      <div class="contact__form  col-lg-5 col-md-6 col-12 order-lg-2 order-md-2 order-1 mt-5">
-                        <h2 class="contact__form-title text-center ">Contact Form</h2>
-
-                        <div class="contact__formData">
-                          <form class="mt-5">
-                          
-                              <div class="form-group pt-3 pb-2">
-                                <label for="inputEmail4" class="text-white h4">Email</label>
-                                <input type="email" class="form-control p-4" id="inputEmail4" placeholder="Your Email">
-                              </div>
-                          
-                            <div class="form-group  pt-3 pb-2">
-                              <label for="inputAddress" class="text-white h4">Contact Number</label>
-                              <input type="text" class="form-control p-4" id="inputAddress" placeholder="+63 000 000 0000">
-                            </div>
-                            <div class="form-group  pt-3 pb-2">
-                              <label for="inputAddress2" class="text-white h4">Address </label>
-                              <input type="text" class="form-control p-4" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row  pt-3 pb-2">
-                              <div class="form-group col-md-4">
-                                <label for="inputCity"  class="text-white h4"> Brgy or Village</label>
-                                <input type="text" class="form-control p-4" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-4">
-                                <label for="inputCity" class="text-white h4">City</label>
-                                <input type="text" class="form-control p-4" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip" class="text-white h4">Zip</label>
-                                <input type="text" class="form-control p-4" id="inputZip">
-                              </div>
-                              <div class="form-group mb-3 p-2">
-                                <label for="validationTextarea" class="text-white h4 mt-3">Message</label>
-                                <textarea class="form-control" rows="6" cols="80" id="validationTextarea" placeholder="" required></textarea>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                            </div>
-                              <!-- Button trigger modal -->
-                              <button type="button" class="btn btn-dark btn btn-primary pl-5 pr-5 pt-3 pb-3 border-0" data-toggle="modal" data-target="#exampleModal">
-                                Send Email
-                              </button>
-
-                              <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting Us!</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      Message Successful Sent
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </form>
+                          <ul class="skill__list list-unstyled">
+                            <li>Node.JS (Express)</li>
+                            <li>PHP</li>
+                         </ul>
 
                         </div>
-                      </div>
+                   </div>
+                   <div class="about-me" >
+                       <h4 class="heading__small-intro">About me</h4>
+                       <img src="./img/profile.jpg" class="about-me__profile" alt="profile-picture">
+
+                       <p class="heading__primary">Hello! I`m Reynan Delizo</p>
+
+                       <p class="heading__italic font-italic">
+                          Every great design begin with positive mindset and hardwork.
+                       </p>
+
+                       <p class="about-me__paragraph">
+                        Reynan Delizo is an IT Staff who gained extensive knowledged about web development using HTML5, CSS3, SCSS, JS, Node JS And PHP Whenever I looked back, it was like only yesterday that I challenged myself at work to create my own web project. Since that moment on, I find myself having this desire to work in web development. It is now leading me to this desire to make this passion as my profession. I love to learn new things. I don't want to give up.
+                       </p>
+
                    </div>
                 </div>
+           </section> 
+          <!-- End of Showcase section -->
+
+          <!-- Start of Project Section -->
+          <section class="project-section">
+              <div class="work__container" id="project-container-id">
+                  <div class="work__message">
+                     <p class="heading__secondary">My Work</p>
+
+                     <p class="work__paragraph">Deployed modern website design, responsive web design for big screen computer, laptop, tablet and smart phone.
+                     </p>
+                  </div>
+                 <div class="work__animation">
+
+                 </div>
+              </div>
+              <div class="project__container" >
+                  <div class="first__project">
+                    <img src="./img/project/gogocaffee.png" class="project__img" alt="first-project">
+                    <h4 class="project__heading">&lt; Gogo Caffee /&gt;</h4>
+                    <button class="project__btn1" id="project-btn1">Github</button>
+                    <button class="project__btn2" id="project-btn2" onmouseover='changeBgColor2(this)' onmouseout="normalBgColor2(this)">Live Demo</button>
+                  </div>
+                  <div class="second__project">
+                    <img src="./img/project/natures.png" class="project__img" alt="first-project">
+                    <h4 class="project__heading">&lt; Natures /&gt;</h4>
+                    <button class="project__btn1" id="project-btn3">Github</button>
+                    <button class="project__btn2" id="project-btn4" onmouseover='changeBgColor4(this)' onmouseout="normalBgColor4(this)">Live Demo</button>
+                  </div>
+                  <div class="third__project">
+                    <img src="./img/project/omnifood.png" class="project__img" alt="first-project">
+                    <h4 class="project__heading">&lt; Omnifood /&gt;</h4>
+                    <button class="project__btn1" id="project-btn5">Github</button>
+                    <button class="project__btn2" id="project-btn6" onmouseover='changeBgColor6(this)' onmouseout="normalBgColor6(this)">Live Demo</button>
+                  </div>
+              </div>
+          </section> 
+          <!-- End of Project Section -->
+           
+          <!-- Start of Work Experience Section -->
+          <section class="work__experience-section">
+              <div class="experience__container" id="work-experience-id">
+                  <p class="heading__secondary experience__title">Work Experience</p>
+
+                  <div class="experience__table">
+
+                         <ul class="experience__list-btn d-lg-flex flex-lg-column list-unstyled">
+
+                            <input type="radio" class="work-experience-radio" name="radio-btn" id="work-btn-1">
+                            
+                            <input type="radio" class="work-experience-radio" name="radio-btn"  id="work-btn-2">
+
+                            <li class="active" id="work-li-1">
+                              <button class="experience__button"  onclick="zuitBtnColor(this)">
+                                <label class="work__btn work__btn1" for="work-btn-1" >Zuitt</label>
+                              </button>
+                            </li>
+
+                            <li id="work-li-2">
+                              <button class="experience__button" onclick="morirokuBtnColor()">
+                                 <label class="work__btn work__btn1"  for="work-btn-2">Moriroku</label>
+                              </button>
+                              
+                            </li> 
+                         </ul> 
+                         <div class="experience__description">
+                            <div class="experience__zuitt open__zuitt" id="zuitt-id">
+                               <div class="heading__secondary">Student <span class="span__primary">@Zuitt</span></div>
+                               <p class="paragraph__quinary">October 2022 - Present</p>
+                               
+                               <p class="paragraph__primary margin__top-secondary">Capstone Project 1 Portfolio Creation 1</p>
+                                <ul class="experience__list list-unstyled">
+                                   <li>
+                                     <span class="span__secondary">
+                                        Have created web portfolio to display <em> “all about me” </em>to
+                                        showcase my talent for web development using the
+                                        following:
+                                     </span>
+                                     <!-- Start second ul element -->
+                                      <ul class="experience-nested__list list-unstyled">
+                                         <li>
+                                            <span class="span__secondary ">
+                                                Created the frontend web pages using <em> HTML5,
+                                                CSS3, Bootstrap and Java Script</em>.
+                                            </span>  
+                                         </li>
+                                         <li>
+                                            <span class="span__secondary ">
+                                              Hosting in GitHub to save created projects so that
+                                              my portfolio is visible on the web or online.
+                                            </span> 
+                                         </li>
+                                      </ul>
+                                      <!-- End second ul element -->
+                                   </li>
+                                </ul>               
+                            </div> 
+                            <div class="experience__moriroku " id="moriroku-id">
+                              <div class="heading__secondary">IT Staff <span class="span__primary">@Moriroku</span></div>
+                              <p class="paragraph__quinary">Nov 2017 - Aug 2021</p>
+                       
+                              <ul class="experience-nested__list list-unstyled margin__top-secondary">
+                                <li>
+                                   <span class="span__secondary ">
+                                      Have developed a monitoring system for Moriroku IT
+                                      Department using <em> HTML5/CSS3/Java script/Node.JS
+                                      (Express)/MS SQL</em> that aims to record all the IP address
+                                      of manufacturing "line production" in order to track the
+                                      "finished output" per production line is on time and not
+                                      delayed.
+                                   </span>  
+                                </li>
+                                <li>
+                                   <span class="span__secondary ">
+                                      Have managed and serve as server administrator for C
+                                      panel web application by doing task such as creating
+                                      employees email, securing spam are block listed and
+                                      making sure that the company group organization
+                                      domains are on white list.
+                                   </span> 
+                                </li>
+                                <li>
+                                  <span class="span__secondary">
+                                      Have managed and served as Office 365 Administrator
+                                      by creating new user accounts for new employees.
+                                  </span> 
+                               </li>
+                               <li>
+                                  <span class="span__secondary">
+                                      Run maintain and backup up all networks, including
+                                      hardware and software updates daily to keep system
+                                      running efficiently.
+                                  </span> 
+                               </li>
+                             </ul>
+                           </div>  
+                         </div>
+                  </div>  
+
+              </div>
+          </section>
+          <!-- End of Work Experience Section -->
+
+          <!-- Start of Contacts Section-->
+            <section class="contact-section">
+               <div class="contact__container" id="contact-id">
+                   <p class="heading__secondary contact__heading">Contact Me</p>
+                     <div class="contact__details">
+                        <div class="contact__information">
+                              <div class="contact__email">
+                                 <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                                 <p class="span__primary"> Email </p>
+                                 <p class="span__tertiary">nandelizo2@gmail.com</p> 
+                                 <a href="#" class="anchor__primary"> send a message </a>  
+                              </div>
+
+                              <div class="contact__phone">
+                                 <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                                   <p  class="span__primary"> Contact</p>
+                                   <p class="span__tertiary">+63 999-570-5503</p>
+                                   <a href="#" class="anchor__primary"> send a message </a>  
+                              </div>
+
+                              <div class="contact__chat">    
+                                 <ion-icon name="chatbubbles-outline" class="contact-icon"></ion-icon>
+                                 <p  class="span__primary"> Messenger </p>  
+                                 <p class="span__tertiary">Let`s stay touch</p>
+                                 <a href="#" class="anchor__primary"> send a message </a>  
+                              </div>
+                        </div>
+                        <div class="contact__form" >
+                              <form action="" class="my-form">
+                                 <div class="form-input-box">
+                                    <input type="text" class="form-input" placeholder="Your Name" >
+                                 </div>
+                                 <div class="form-input-box">
+                                    <input type="email" class="form-input" placeholder="Your Email">
+                                 </div>
+                                 <div class="text-area-input-box">
+                                    <textarea name="message" class="form-text-area" id="" cols="30" rows="10"  placeholder="Your Message"></textarea>
+                                 </div>
+                                 <div>
+                                    <button class="form-btn">Send Message</button>
+                                 </div>
+                                
+                              </form>
+                        </div>
+                  </div>
+               </div>
             </section>
+          <!-- End of Contacts Section-->
 
-            <!-- End Contact Form Section -->
-        </main>
+      </main>
+       
 
-        <footer class="section-footer col-lg-12">
-            <div class="footer col-lg-12 col-md-12 col-12 m-auto d-flex align-items-lg-center align-items-md-center">
-                <div class="footer__category col-lg-12 col-md-12 col-12 d-lg-flex d-md-flex align-items-lg-center align-items-md-center">   
-                   <div class="footer__navigation col-lg-4 col-md-4 col-12">
-                      <ul class="footer__navigation-list list-unstyled  d-lg-flex d-md-flex d-flex col-lg-12 col-md-12 col-12 pl-lg-4 pl-md-4">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contacts</a></li>
-                      </ul>  
-                      <!-- Creates resume button -->           
-                      <div class="footer__navigation-icons list-unstyled d-flex align-items-center justify-content-start pl-lg-4 pl-md-4 mt-md-3 ">
-                        <li class="pl-4 pr-4"><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
-                        <li class="pl-4 pr-4"><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li class="pl-4 "><a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                      </div>                              
-                    </div>
+      
+    </div>
 
-                    <div class="footer__logo d-lg-flex d-md-flex justify-content-start    mt-5 col-lg-4 col-md-4" >
-                      <img src="./frontend/public/images/projects/logo.png" class="footer__navigation-logo" alt="logo">
-                    </div>
-
-                    <div class="footer__navigation-message col-lg-4 col-md-4 pt-lg-5 pt-md-3 pt-2 mt-5">
-                      Built my REYNAN DELIZOfor his online ADVANCE CSS AND SASS. Copyright © by: Reynan Delizo. You are 100% allowed to use this webpage for both personal and commercial use, but not to claim it is your own design. A credit to the original author, Reynan Delizo, is of course highly appreciated!
-                    </div>
-
-                </div>
+    <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__logo">
+               <img src="./img/logo.png" class="footer-main-logo" alt="footer-project">
+               <div class="footer-icons-container list-unstyled d-flex">
+                  <a href="https://github.com/reynan1" target="_blank" class="font-icons">
+                     <ion-icon name="logo-github" class="footer-icons"></ion-icon>
+                  </a>
+                  <a href="#" target="_blank" class="font-icons">
+                     <ion-icon name="logo-facebook" class="footer-icons"></ion-icon>
+                  </a>
+                  <a href="#" target="_blank" class="font-icons">
+                     <ion-icon name="logo-linkedin" class="footer-icons"></ion-icon>
+                  </a>
+               </div> 
             </div>
-        </footer>
-     </div> 
+            <div class="footer__navigation">
+
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <p class="footer__paragraph margin__top-secondary">
+               Copyright &copy; 2022 by nanD studio. All rights reserved.
+             </p>
+         </div>
+    </footer>
+  
+    
+     
 
   <!-- JS external -->
 
-  <script src="./frontend/public/js/app.js"> </script>
+  <script src="./js/index.js"> </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   
