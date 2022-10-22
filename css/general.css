@@ -174,9 +174,8 @@ body {
 
 .span__secondary {
   font-size: 1.4rem;
-  line-height: 1.7;
+  line-height: 1.5;
   letter-spacing: 1.1px;
-  margin-top: 1rem;
 }
 
 .span__tertiary {
