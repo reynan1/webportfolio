@@ -120,6 +120,10 @@
 
   .nav-open .header__icon-mobile-nav[name="close-outline"] {
     display: block;
+    z-index: 20;
+    position: absolute;
+    right: 6.5%;
+    top: 12px;
   }
 
   .nav-open .header__icon-mobile-nav[name="menu-outline"] {
@@ -852,6 +856,7 @@
   .footer__logo-mobile{
     text-align: center;    
     padding-top: 3rem;
+    display: block !important;
   }
 
   .footer-icons-container-mobile{

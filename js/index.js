@@ -1,5 +1,13 @@
 
+function openNav() {
+  let element = document.getElementById("header-nav");
+  element.classList.add("nav-open");
+}
 
+function closeNav(){
+  let element = document.getElementById("header-nav");
+  element.classList.remove("nav-open");
+}
 
 
 function changeBgColor2() {
