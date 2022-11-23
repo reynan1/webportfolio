@@ -704,12 +704,12 @@
 
 
  .project-section {
-   border: 2px solid violet;
+/*    border: 2px solid violet; */
    width: 96% !important;
-   height: 250vh;
+   height: 250vh !important;
  }
 .work__container{
-  border: 2px solid blue;
+/*   border: 2px solid blue; */
  width:  100% !important;
  height: 30vh;
  margin: 0 !important;
@@ -727,8 +727,8 @@
  }
  
  .project__container{
-  border: 2px solid green;
-   height: 200vh !important;
+/*   border: 2px solid green; */
+   height: 220vh !important;
    display: flex !important;
    padding: 1rem !important;
    flex-direction: column;
@@ -739,12 +739,13 @@
  .second__project,
  .third__project {
    width: 100% !important;
-   height: 100vh !important;
+   height: 70vh !important;
+ /*   border: 2px solid red; */
  }
 
  .project__img {
-   width: 55rem !important;
-   height: 30rem !important;
+   width: 50rem !important;
+   height: 40rem !important;
  }
 
  /*********************************/
@@ -754,7 +755,7 @@
  .work__experience-section {
 /* border: 2px solid violet; */
    width: 98% !important;
-   height: 250vh !important;
+   height: 180vh !important;
    margin: auto;
    display: flex;
    align-items: center;
@@ -762,7 +763,7 @@
 
  .experience__container{
 /* border: 2px solid green; */
-   height: 230vh !important;
+   height: 170vh !important;
  }
 
  .experience__title{
