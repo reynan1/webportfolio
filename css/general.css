@@ -38,7 +38,7 @@ body {
   /* 
    --> Only works if there is nothing absolutely positioned in  
   */
-  overflow-x: hidden;
+/*   overflow-x: hidden; */
   
 }
 
