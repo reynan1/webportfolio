@@ -427,7 +427,7 @@
 .work__experience-section {
 /*   border: 2px solid violet; */
   width: 85%;
-  height: 120vh;
+  height: 150vh;
   margin: auto;
   display: flex;
   align-items: center;
@@ -436,11 +436,16 @@
 .experience__container{
 /*   border: 2px solid green; */
   background-color: #212123;
-  height: 100vh;
+  height: 140vh;
   width: 95%;
   border-radius: 20px;
   margin: 2rem auto;
   padding-top: 3rem;
+}
+
+.experience-li_own-property {
+ /*  border: 2px solid #fff; */
+ 
 }
 
 .experience__title {
@@ -544,12 +549,14 @@
 .experience-nested__list li {
   margin-right: 2rem;
   margin-top: 1rem;
+  display: flex;
 }
 
 .experience-nested__list li::before {
   content: '✓';
   padding-right: 1rem ;
   color: #40c057;
+  margin-top: .5rem;
 }
 
 .experience__moriroku {

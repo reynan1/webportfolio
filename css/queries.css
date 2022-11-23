@@ -758,17 +758,17 @@
   /*********************************/
 
   .work__experience-section {
-/*  border: 2px solid violet; */
+ border: 2px solid violet;
     width: 98% !important;
-    height: 130vh !important;
+    height: 250vh !important;
     margin: auto;
     display: flex;
     align-items: center;
   }
 
   .experience__container{
-/*  border: 2px solid green; */
-    height: 120vh !important;
+ border: 2px solid green;
+    height: 230vh !important;
   }
 
   .experience__title{
@@ -807,11 +807,11 @@
    /* contacts*/
    .contact-section{
 /*     border: 2px solid violet; */
-    height: 170vh !important;
+    height: 250vh !important;
    } 
 
    .contact__container{
-    height: 170vh !important;
+    height: 250vh !important;
    }
 
    .contact__details {
