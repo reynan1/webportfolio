@@ -1060,9 +1060,9 @@
 
 
   .project-section {
-   /*  border: 2px solid violet; */
+/*     border: 2px solid violet; */
     width: 96% !important;
-    height: 170vh;
+    height: 172vh !important;
   }
 .work__container{
   width:  100% !important;
@@ -1093,11 +1093,12 @@
   .second__project,
   .third__project {
     width: 100% !important;
-    height: 40vh !important;
+    height: 50vh !important;
   }
 
   .project__img {
     width: 30rem !important;
+    height: 20rem !important;
   }
 
   /*********************************/
@@ -1107,7 +1108,7 @@
   .work__experience-section {
 /*  border: 2px solid violet; */
     width: 98% !important;
-    height: 250vh !important;
+    height: 205vh !important;
     margin: auto;
     display: flex;
     align-items: center;
@@ -1115,7 +1116,7 @@
 
   .experience__container{
 /*  border: 2px solid green; */
-    height: 230vh !important;
+    height: 190vh !important;
   }
 
   .experience__title{
@@ -1154,11 +1155,11 @@
    /* contacts*/
    .contact-section{
 /*     border: 2px solid violet; */
-    height: 250vh !important;
+    height: 170vh !important;
    } 
 
    .contact__container{
-    height: 250vh !important;
+    height: 170vh !important;
    }
 
    .contact__details {
