@@ -539,7 +539,352 @@
 
 @media (max-width: 44em) {
 
-}  
+  /**************************/
+/*    LANDING SECTION     */
+/**************************/
+
+.landing__container {
+  /*  border: 2px solid red; */
+   height: 80vh !important;
+ }
+
+ .landing__message {
+/*     border: 2px solid green; */
+   width: 100% !important;
+   height: 40vh !important;
+   display: flex;
+   flex-direction: column;
+   padding-top: 0 !important;
+   margin-top: 0 !important;
+ }
+
+ .heading__quarterly {
+   width: 50% !important;
+   margin-bottom: 1.5rem !important;
+   
+ }
+
+ .heading__primary {
+   font-size: 3rem !important;
+   line-height: 1.2 !important;
+   /* border: 2px solid red; */
+   margin-top: 0rem !important;
+
+ }
+
+ .heading__quinary {
+   margin-top: 1.5rem !important;
+   line-height: 1.5 !important;
+   letter-spacing: 2.5px !important;
+   width: 100% !important;
+ }
+
+ .heading__link {
+   font-size: 1.5rem !important;
+   width: 35% !important;
+   margin-top: 3rem !important;
+ }  
+
+ .reynan-circular__img {
+   width: 18rem;
+   margin-top: 8rem !important;
+ }
+
+ .experience-number__container {
+  /*  border: 2px solid green;  */
+   height: 5vh !important;
+   width: 100% !important;
+   margin-top: 4.5rem !important;
+ }
+
+ .experience__languages {
+   margin-left: 17rem !important;
+   margin-right: 0.5rem; 
+ }
+
+ .number__experience {
+   margin-right: 0.5rem; 
+ }
+ 
+ .year-experience {
+   font-size: 1.2rem;
+   line-height: 1.3;
+   position: absolute;
+   width: 20% !important;
+/*     border: 2px solid red; */
+ }
+ 
+ .language__experience {
+   font-size: 1.2rem;
+   line-height: 1.3;
+   position: absolute;
+   width: 40% !important;
+ }
+
+/**************************/
+/*    SHOWCASE SECTION    */
+/**************************/
+
+.showcase-section {
+ height: 220vh !important;
+/*    border: 2px solid red; */
+}
+
+.showcase__container {
+ flex-direction: column;
+ height: 210vh !important;
+ width: 95% !important;
+}
+
+.skills {
+ padding-top: 2rem !important;
+ width: 100% !important;
+ height: 110vh !important;
+}
+
+.skill__design,
+.skill__frontend,
+.skill__backend {
+ height: 29vh !important;
+}
+
+.heading__skills {
+ font-size: 1.6rem !important;
+ letter-spacing: 1.3px;
+}
+
+.skill__list {
+ line-height: 2 !important;
+}
+
+.heading__paragraph {
+ font-size: 1.4rem !important;
+ line-height: 1.6 !important;
+ letter-spacing: 1.5px !important;
+}
+
+.about-me {
+/*     border: 2px solid green; */
+ margin-top: 2rem;
+ width: 80% !important;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.heading__primary {
+ font-size: 2.4rem !important;
+}
+
+.heading__primary{
+ margin-top: 2.5rem;
+}
+
+.heading__italic {
+ /* border: 2px solid green; */
+ text-align: center;
+ font-size: 1.8rem !important;
+ width: 100% !important;
+ line-height: 1.5 !important;
+ margin-top: 2.5rem;
+ letter-spacing: 2px  !important;
+}
+
+
+.about-me__paragraph {
+ margin-top: 2rem !important;
+ letter-spacing: 2px !important;
+ 
+}
+
+ /*********************************/
+ /*    PROJECT SECTION    */
+ /*********************************/
+
+
+ .project-section {
+   border: 2px solid violet;
+   width: 96% !important;
+   height: 250vh;
+ }
+.work__container{
+  border: 2px solid blue;
+ width:  100% !important;
+ height: 30vh;
+ margin: 0 !important;
+}
+
+ .work__message {
+  /*    border: 2px solid red; */
+     margin: 0rem auto;
+     width: 90% !important;
+     height: 20vh !important;
+ }
+
+ .work__animation{
+   display: none !important;
+ }
+ 
+ .project__container{
+  border: 2px solid green;
+   height: 200vh !important;
+   display: flex !important;
+   padding: 1rem !important;
+   flex-direction: column;
+
+ }
+
+ .first__project, 
+ .second__project,
+ .third__project {
+   width: 100% !important;
+   height: 100vh !important;
+ }
+
+ .project__img {
+   width: 55rem !important;
+   height: 30rem !important;
+ }
+
+ /*********************************/
+ /*    EXPERIENCE   */
+ /*********************************/
+
+ .work__experience-section {
+/* border: 2px solid violet; */
+   width: 98% !important;
+   height: 250vh !important;
+   margin: auto;
+   display: flex;
+   align-items: center;
+ }
+
+ .experience__container{
+/* border: 2px solid green; */
+   height: 230vh !important;
+ }
+
+ .experience__title{
+   margin-top: 4rem !important;
+ }
+
+ .experience__table {
+/*  border: 2px solid red; */
+   width: 85% !important;
+   grid-template-columns: 1fr !important;
+   text-align: left !important;
+ }
+
+ .experience__list-btn {
+/* border: 2px solid red; */
+   display: flex;
+   height: 7vh !important;  
+   width: 100% !important;
+ }
+
+ .experience__list-btn li {
+   padding: 1rem 2rem 1rem 2rem !important;
+ }
+
+ .experience__description{
+  /*  border: 2px solid yellow; */
+   height: 100vh !important;
+   margin-top: 3rem !important;
+ }
+
+ .span__secondary {
+   font-size: 1.4rem !important;
+   letter-spacing: 1.2px !important;
+ }
+
+  /* contacts*/
+  .contact-section{
+/*     border: 2px solid violet; */
+   height: 250vh !important;
+  } 
+
+  .contact__container{
+   height: 250vh !important;
+  }
+
+  .contact__details {
+/*     border: 2px solid orange; */
+   grid-template-columns: 1fr !important;
+   height: 165vh !important;
+  }
+
+  .contact__email,.contact__phone,.contact__chat {
+   width: 100% !important;
+   height: 25vh!important;
+   border-radius: 20px !important;
+  }
+
+  .my-form{
+   height: 65vh!important;
+  }
+
+ /*********************************/
+ /*    FOOTER   */
+ /*********************************/
+
+
+  .footer {
+   width: 100% !important;
+   height: 100vh !important;
+  }
+
+  .footer__container{
+/*     border: 2px solid orange; */
+   height: 80vh !important;
+   display: grid !important;
+   grid-template-columns: 1fr 1fr!important;
+  }
+
+  .footer__logo{
+   width: 13%;
+   display: none;
+   /*   border: 2px solid green; */
+ }
+
+ .footer__logo-mobile{
+   text-align: center;    
+   padding-top: 3rem;
+   display: block !important;
+ }
+
+ .footer-icons-container-mobile{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   margin-top: 3rem;
+ }
+
+  .footer__contacts,
+  .footer__experience,
+  .footer__project,
+  .footer__about-me,
+  .footer__landing-pages {
+   width: 100% !important;
+/*     border:2px solid green; */
+ }
+
+ .footer__paragraph{
+   line-height: 1.8 !important;
+ }
+
+ .footer-copyright{
+/*     border: 2px solid red;  */
+   width: 80% !important;
+   margin: 2rem auto 5rem auto !important;
+ }
+
+}
+
+
+
+  
 
 
 /**************************/
@@ -758,7 +1103,7 @@
   /*********************************/
 
   .work__experience-section {
- border: 2px solid violet;
+/*  border: 2px solid violet; */
     width: 98% !important;
     height: 250vh !important;
     margin: auto;
@@ -767,7 +1112,7 @@
   }
 
   .experience__container{
- border: 2px solid green;
+/*  border: 2px solid green; */
     height: 230vh !important;
   }
 
