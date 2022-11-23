@@ -427,7 +427,7 @@
 .work__experience-section {
 /*   border: 2px solid violet; */
   width: 85%;
-  height: 100vh;
+  height: 120vh;
   margin: auto;
   display: flex;
   align-items: center;
@@ -436,7 +436,7 @@
 .experience__container{
 /*   border: 2px solid green; */
   background-color: #212123;
-  height: 80vh;
+  height: 100vh;
   width: 95%;
   border-radius: 20px;
   margin: 2rem auto;
@@ -449,7 +449,7 @@
 }
 
 .experience__table {
-  width: 60%;
+  width: 70%;
   margin: 8rem auto;
   display: grid;
   grid-template-columns: 1fr 5fr;
