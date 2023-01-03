@@ -400,14 +400,14 @@
   background-color: #40c057;
   transition: all .5s ease-out;
   text-decoration: none;
-  color: #161618;
+  color: #161618 !important;
 }
 
 .project__btn2:hover{
   background-color: transparent;
   border:#40c057 2px solid;
   color: #40c057;
-  text-decoration: none;
+  text-decoration: none !important;
 }  
 
 .project__btn2:hover .project__btn1 {
