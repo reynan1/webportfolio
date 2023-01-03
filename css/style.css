@@ -400,7 +400,7 @@
   background-color: #40c057;
   transition: all .5s ease-out;
   text-decoration: none;
-  color: #161618 !important;
+  color: #161618;
 }
 
 .project__btn2:hover{
