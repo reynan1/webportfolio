@@ -391,6 +391,7 @@
   border:#40c057 2px solid;
   color: #40c057;
   transition: all .5s ease-out;
+
 }
 
 
@@ -398,12 +399,15 @@
   margin-left: 1.5rem;
   background-color: #40c057;
   transition: all .5s ease-out;
+  text-decoration: none;
+  color: #161618;
 }
 
 .project__btn2:hover{
   background-color: transparent;
   border:#40c057 2px solid;
   color: #40c057;
+  text-decoration: none;
 }  
 
 .project__btn2:hover .project__btn1 {
