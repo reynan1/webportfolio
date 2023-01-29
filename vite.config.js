@@ -6,6 +6,7 @@ dotenv.config()
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/webportfolio',
   plugins: [react()],
   server: {
     port: Number(process.env.PORT)
