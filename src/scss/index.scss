@@ -1,0 +1,32 @@
+/* -- base style -- */
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+
+/* -- layout style -- */
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/footer";
+
+/* -- pages style -- */
+@import "./pages/home";
+
+/* -- components style -- */
+@import "./components/button";
+@import "./components/image";
+@import "./components/landing";
+@import "./components/experience";
+@import "./components/project";
+@import "./components/workExperience";
+@import "./components/awardsAndCertificates";
+@import "./components/contact";
+
+
+/*  -- abstract style -- */
+@import "./abstract/variable";
+@import "./abstract/mixins";
+
+
+
+

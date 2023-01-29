@@ -1,0 +1,83 @@
+@import "../base/utilities";
+
+.landing {
+  &__container {
+/*     border: 2px solid #fff;  */
+    width: 95% ;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    @include respond(phone) {
+      width: 100%;
+      grid-template-columns: 1fr;
+   /*    border: 2px solid red; */
+    }
+  }
+
+  &__intro {
+     /* border: 2px solid red; */
+    display: grid;
+    place-items: center;
+    grid-template-rows: 10fr 1fr;
+    width: 70%;
+   
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      margin-top: 5rem;
+      grid-template-rows: 2fr 2fr; 
+    }
+
+    &-message {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-experience {
+      width: 100%;
+      display: grid;
+      align-items: flex-end ;
+      grid-template-columns: .8fr 1fr 4fr .8fr 2fr;
+      padding-bottom: 1rem;
+
+      @include respond(tab-port) {
+        grid-template-columns:  2fr 1fr 4fr 2fr 4fr;
+      }
+
+      @include respond(phone) {
+/*         border: 2px solid red; */
+        padding-left: 2rem;
+        grid-template-columns:  2fr 3fr 4fr 2fr 4fr;
+      }
+    }
+    
+  }
+
+  &__circular {
+    &-image {
+    
+      display: none;
+      @include respond(phone) {
+          /*  border: 2px solid red;  */
+           display: block;
+           width: 20rem;
+      }
+    }
+
+  }
+
+
+  &__profile-img {
+/*     border:2px solid #fff; */
+    display: flex;
+    align-items: flex-end;
+
+  }
+
+}

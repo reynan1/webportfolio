@@ -1,0 +1,28 @@
+@import "../abstract/variable";
+.row {
+  border: 2px solid red;
+  max-width: $grid-width;
+  margin: 0 auto !important;
+
+
+  .col-1-of-2 {
+    border: 2px solid orange;
+    width: calc((100% - #{$gutter-horizontal}) / 2) !important;
+    float: left;
+
+    &:not(:last-child){
+      margin-right: $gutter-horizontal !important;
+    }
+  }
+
+  .col-1-of-1-of-2 {
+    border: 2px solid orange;
+    grid-template-columns: 1 2;
+    float: left;
+
+    &:not(:last-child){
+      margin-right: $gutter-horizontal !important;
+    }
+  }
+
+}

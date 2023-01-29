@@ -1,0 +1,82 @@
+.u-margin-top-x15 {
+  margin-top: 15rem;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
+}
+
+.u-margin-top-x13 {
+  margin-top: 13rem;
+
+  @include respond(tab-port) {
+    margin-top: 11rem;
+  }
+}
+
+.u-margin-top-x12 {
+  margin-top: 12rem;
+
+  @include respond(tab-port) {
+    margin-top: 10rem;
+  }
+}
+
+.u-margin-top-x10 {
+  margin-top: 10rem;
+
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
+}
+
+.u-margin-top-x7 {
+  margin-top: 7rem;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
+}
+
+.u-margin-top-x5 {
+  margin-top: 5rem;
+
+  @include respond(tab-port) {
+    margin-top: 3rem;
+  }
+}
+
+.u-margin-top-x4 {
+  margin-top: 4rem;
+}
+
+.u-margin-top-x3 {
+  margin-top: 3rem;
+}
+
+.u-margin-top-x2 {
+  margin-top: 2rem;
+}
+
+.u-margin-top-x1 {
+  margin-top: 1rem;
+}
+
+.u-margin-bottom-x3 {
+  margin-top: 3rem;
+}
+
+.u-margin-right-x4 {
+  margin-right: 4rem;
+}
+
+.u-mini-margin-right {
+  border: 2px solid red;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+

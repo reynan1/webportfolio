@@ -1,0 +1,144 @@
+.awardsAndCertificates {
+    color: $color-white;
+    padding: 2rem 2rem;
+
+    @include respond(tab-port) {
+/*        border: 2px solid violet !important; */
+       padding: 0rem 0rem;
+    }
+
+    @include respond(phone) {
+/*       border: 2px solid violet !important; */
+      padding: 0rem 1rem 0rem 0rem;
+      width: 100%;
+    }
+
+ &__showcase {
+/*    border: 2px solid yellow; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 0 3rem 0;
+  
+  @include respond(tab-port) {
+ /*        border: 2px solid red !important; */
+        width: 100%;
+        grid-template-columns: 1fr;
+      }
+
+      @include respond(phone) {
+/*         border: 2px solid green !important; */
+        padding: 0rem 0rem;
+        width: 100%;
+      }
+
+ }
+ 
+
+  
+ &__achievements {
+  /*   border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    width: 90%;
+
+    @include respond(tab-port) {
+/*       border: 2px solid red !important; */
+      width: 100%;
+    }
+    
+    @include respond(phone) {
+/*       border: 2px solid orange !important; */
+      width: 100%;
+    }
+
+
+    &-awards {
+      width: 100%;
+      background-color: $color-tertiary;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      transition: all .5s ease-in;
+
+      @include respond(phone) {
+        width: 100%;
+/*         border: 2px solid red; */
+      }
+    }
+
+    &-certificates {
+      width: 100%;
+      background-color: $color-tertiary;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      transition: all .5s ease-in; 
+
+      @include respond(phone) {
+        width: 100%;
+  /*       border: 2px solid yellow; */
+      }
+    }
+  }
+
+  &__gallery {
+    background-color: $color-tertiary;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+
+    @include respond(tab-port) {
+   /*    border: 2px solid red !important;  */
+      margin-top: 3rem;
+     }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.6rem;
+      padding: 1.6rem;
+      cursor: pointer;
+
+      @include respond(tab-port) {
+        /*    border: 2px solid red !important;  */
+           gap: 2rem
+       }
+
+       @include respond(phone) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0rem
+      }
+    }
+
+    &-item {
+      background-color: $color-secondary;
+      padding: 1rem 1rem;
+      border-radius: 20px;
+
+      @include respond(tab-port) {
+     /*       border: 2px solid red !important;   */
+           padding: 2.5rem 0rem; 
+       }
+
+       @include respond(phone) {
+        /*       border: 2px solid red !important;   */
+              padding: 1rem 1rem; 
+          }
+    }
+
+    &-item:hover {
+ 
+      box-shadow: inset 0 1em 3em rgba(0, 0, 0, 0.1),
+      0 0 0 0px hsla(210, 2%, 17%, 0.541), 0.3em 3em 7em rgba(0, 0, 0, 0.3);
+    }
+
+    &-image {
+      width: 18rem;
+      border-radius: 10px;
+      display:block;
+      margin: auto;
+    }
+  }
+
+}
