@@ -35,7 +35,9 @@
   &__description {
     position: relative;
   }
-  &__zuitt,&__moriroku, &__leisue {
+  &__zuitt,
+  &__moriroku, 
+  &__leisue {
     position: absolute;
     top: 0%;
     opacity: 0;

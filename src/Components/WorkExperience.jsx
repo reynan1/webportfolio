@@ -91,41 +91,59 @@ const WorkExperience = () => {
 
                    <p className="heading__senary u-margin-top-x1">May 2023 - June 2025</p>
 
-                   <p className="heading__quarterly u-margin-top-x3 "> Production monitoring system ( HTML5, CSS3, JavaScript, Node.js, Mongoose, MSSQL )</p> 
+                   <p className="heading__quarterly u-margin-top-x3 "> Duties & Responsibilities</p> 
                    <ul className="workExperience__list list-unstyled">
                        <li>
                 
                           <ul className="workExperience-nested__list list-unstyled">
                               <li>
                                  <span className="heading__quinary">
-                                              Have developed a monitoring system for Moriroku IT
-                                              Department using <em> HTML5/CSS3/Java script/Node.JS
-                                              (Express)/MS SQL</em> that aims to record all the IP address
-                                              of manufacturing "line production" in order to track the
-                                              "finished output" per production line is on time and not
-                                              delayed.
+                                    Developed and maintained a scalable, real-time queuing system using the MEAN stack (MongoDB, Express.js, Angular, Node.js). 
                                  </span>  
                               </li>
                               <li>
                                  <span className="heading__quinary ">
-                                              Have managed and serve as server administrator for C
-                                              panel web application by doing task such as creating
-                                              employees email, securing spam are block listed and
-                                              making sure that the company group organization
-                                              domains are on white list.
+                                    Designed and implemented key features such as appointment scheduling, advertisement management, and support modules using Angular (v13–v19), leveraging RxJS and standalone components.
                                  </span> 
                               </li>
                               <li>
                                  <span className="heading__quinary ">
-                                              Have managed and served as Office 365 Administrator
-                                              by creating new user accounts for new employees.
+                                    Improved operational efficiency and user experience by building an appointment-based queueing system that reduced wait times. 
                                  </span> 
                               </li>
                               <li>
                                  <span className="heading__quinary ">
-                                              Run maintain and backup up all networks, including
-                                              hardware and software updates daily to keep system
-                                              running efficiently.
+                                    Built a centralized advertisement management system that synchronizes content across multiple branch devices (kiosks and TVs), ensuring consistent and up-to-date displays. 
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Developed a support module to efficiently manage and resolve client issues, enhancing response time and customer satisfaction. 
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Integrated WebSocket for real-time communication of appointment requests and configured Cron Jobs for automated tasks such as reminders and system maintenance.  
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Containerized backend services using Docker and Docker Compose to streamline deployment and service management.  
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Collaborated with cross-functional teams through code reviews and Agile methodologies to ensure code quality and continuous improvement.   
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Utilized GitLab for version control, secure code management, and streamlined development workflows.
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                    Utilized GitLab for version control, secure code management, and streamlined development workflows.
                                  </span> 
                               </li>
                           </ul>        
