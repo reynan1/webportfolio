@@ -1,27 +1,51 @@
 import { useState, useEffect, useRef } from "react";
 
 const WorkExperience = () => {
-
-  const[list1, setList1] = useState(false)
-  const [list2, setList2 ] = useState(false)
-
+  /*  note: if list is false the description experience show up else is hiding  */
+  const [listOne, setListOne] = useState(false)
+  const [listTwo, setListTwo ] = useState(false)
+  const [listThree, setListThree] = useState(false)
+  const [btnThree, setBtnThree] = useState(false)
+  const [btnTwo, setBtnTwo] = useState(false) 
+  const [btnOne, setBtnOne] = useState(false)
+  
   const btn1 = () => {
-     setList1(true)
-     setList2(false)
+     setListOne(false)
+     setListTwo(true)
+     setListThree(true)
+     setBtnOne(true)
+     setBtnTwo(false)
+     setBtnThree(false)
   }
 
   const btn2 = () => {
-     setList2(true)
-     setList1(false)
+     setListOne(true)
+     setListTwo(false)
+     setListThree(true)
+     setBtnOne(false)
+     setBtnTwo(true)
+     setBtnThree(false)
+  }
+
+ const btn3 = () => {
+     setListThree(false)
+     setListTwo(true)
+     setListOne(true)
+     setBtnOne(false)
+     setBtnTwo(false)
+     setBtnThree(true) 
   }
   
   useEffect (() => {
-    setList1(true)
-    setList2(false)
+    setListThree(false)
+    setListTwo(true)
+    setListOne(true)
+    setBtnOne(false)
+    setBtnTwo(false)
+    setBtnThree(true) 
   }, [])
 
-
-
+  console.log(`list1: ${listOne} :: listTwo: ${listTwo} :: listThree: ${listThree}`)
   return (
     <section className="workExperience-section u-margin-top-x12">
       <div className="workExperience">
@@ -30,27 +54,86 @@ const WorkExperience = () => {
 
             <div className="workExperience__table">
               <ul  className="workExperience__list-btn">
-                 <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn1} id="work-btn-1" />
-                            
+                <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn1} id="work-btn-1" />             
                 <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn2}  id="work-btn-2"/>
+                <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn3}  id="work-btn-3"/>
 
-                <li className= { list1 ? "active" : undefined } id="work-btn-1">
+               <li className= { btnThree ? "active" : undefined } id="work-btn-3">
                    <button className="workExperience__btn">
-                      <label  htmlFor="work-btn-1" >
+                      <label  htmlFor="work-btn-3" >
+                        Leisue
+                      </label>
+                    </button>
+                </li>
+                
+                <li className= { btnTwo ? "active" : undefined } id="work-btn-2">
+                   <button className="workExperience__btn">
+                      <label  htmlFor="work-btn-2" >
                         Zuitt
                       </label>
                     </button>
                 </li>
-                <li id="work-btn-2" className={list2 ? "active" : undefined }>
+                <li className={btnOne ? "active" : undefined } id="work-btn-1">
                     <button className="workExperience__btn">
-                      <label  htmlFor="work-btn-2">
+                      <label  htmlFor="work-btn-1">
                         Moriroku
                       </label>
                     </button>
                 </li>
               </ul>
               <div className="workExperience__description">
-                <div className={list2 ? "workExperience__zuitt" : undefined}>
+      
+                 <div className={listThree ? "workExperience__leisue" : undefined} id="moriroku-id" >
+                   <div className="heading__secondary">
+                     JR Fullstack Developer 
+                     <span className="span__primary">Leisue Inc.</span>
+                   </div>
+
+                   <p className="heading__senary u-margin-top-x1">May 2023 - June 2025</p>
+
+                   <p className="heading__quarterly u-margin-top-x3 "> Production monitoring system ( HTML5, CSS3, JavaScript, Node.js, Mongoose, MSSQL )</p> 
+                   <ul className="workExperience__list list-unstyled">
+                       <li>
+                
+                          <ul className="workExperience-nested__list list-unstyled">
+                              <li>
+                                 <span className="heading__quinary">
+                                              Have developed a monitoring system for Moriroku IT
+                                              Department using <em> HTML5/CSS3/Java script/Node.JS
+                                              (Express)/MS SQL</em> that aims to record all the IP address
+                                              of manufacturing "line production" in order to track the
+                                              "finished output" per production line is on time and not
+                                              delayed.
+                                 </span>  
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                              Have managed and serve as server administrator for C
+                                              panel web application by doing task such as creating
+                                              employees email, securing spam are block listed and
+                                              making sure that the company group organization
+                                              domains are on white list.
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                              Have managed and served as Office 365 Administrator
+                                              by creating new user accounts for new employees.
+                                 </span> 
+                              </li>
+                              <li>
+                                 <span className="heading__quinary ">
+                                              Run maintain and backup up all networks, including
+                                              hardware and software updates daily to keep system
+                                              running efficiently.
+                                 </span> 
+                              </li>
+                          </ul>        
+                        </li>
+                    </ul>    
+                </div>
+                
+                <div className={listTwo ? "workExperience__zuitt" : undefined}>
                     <div className="heading__secondary ">
                          Student 
                         <span className="span__primary">@Zuitt</span>
@@ -148,7 +231,7 @@ const WorkExperience = () => {
                  {/* End of capstone 2 */}  
 
                 </div>
-                <div className={list1 ? "workExperience__moriroku" : undefined} id="moriroku-id" >
+                <div className={listOne ? "workExperience__moriroku" : undefined} id="moriroku-id" >
                    <div className="heading__secondary">
                      IT Staff 
                      <span className="span__primary">@Moriroku</span>
@@ -197,6 +280,7 @@ const WorkExperience = () => {
                         </li>
                     </ul>    
                 </div>
+
               </div>
             </div>
 
