@@ -1,6 +1,6 @@
-@import "../abstract/variable";
-@import "../base/utilities";
-
+@use "../abstract/variable" as *;
+@use "../base/utilities" as *;
+@use "../abstract/mixins" as *;
 .project {
 
    &__showcase {

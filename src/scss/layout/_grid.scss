@@ -1,4 +1,4 @@
-@import "../abstract/variable";
+@use "../abstract/variable" as *;
 .row {
   border: 2px solid red;
   max-width: $grid-width;

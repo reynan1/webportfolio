@@ -85,7 +85,7 @@ const WorkExperience = () => {
       
                  <div className={listThree ? "workExperience__leisue" : undefined} id="moriroku-id" >
                    <div className="heading__secondary">
-                     JR Fullstack Developer 
+                     JR Fullstack Developer@
                      <span className="span__primary">Leisue Inc.</span>
                    </div>
 

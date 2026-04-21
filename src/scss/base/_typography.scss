@@ -1,5 +1,6 @@
-.heading{
+@use "../abstract/variable" as *;
 
+.heading{
   &__primary {
     font-size: 3.6rem;
     letter-spacing: 1.2px;

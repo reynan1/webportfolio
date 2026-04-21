@@ -1,31 +1,31 @@
 /* -- base style -- */
-@import "./base/base";
-@import "./base/typography";
-@import "./base/utilities";
+@use "./base/base";
+@use "./base/typography";
+@use "./base/utilities";
 
 
 /* -- layout style -- */
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/footer";
+@use "./layout/grid";
+@use "./layout/header";
+@use "./layout/footer";
 
 /* -- pages style -- */
-@import "./pages/home";
+@use "./pages/home";
 
 /* -- components style -- */
-@import "./components/button";
-@import "./components/image";
-@import "./components/landing";
-@import "./components/experience";
-@import "./components/project";
-@import "./components/workExperience";
-@import "./components/awardsAndCertificates";
-@import "./components/contact";
+@use "./components/button";
+@use "./components/image";
+@use "./components/landing";
+@use "./components/experience";
+@use "./components/project";
+@use "./components/workExperience";
+@use "./components/awardsAndCertificates";
+@use "./components/contact";
 
 
 /*  -- abstract style -- */
-@import "./abstract/variable";
-@import "./abstract/mixins";
+@use "./abstract/variable";
+@use "./abstract/mixins";
 
 
 

@@ -29,6 +29,8 @@ const experience = () => {
                 <li>Adobe Illustrator CC 2020</li>
                 <li>GitHub</li>
                 <li>Postman</li>
+                <li>Docker</li>
+                <li>AWS S3 Bucket</li>
               </ul>
             </div>
 
@@ -45,9 +47,10 @@ const experience = () => {
 
               <ul className="experience__skill-list list-unstyled">
                 <li> HTML 5, CSS 3</li>
-                <li> JavaScript</li>
-                <li> SCSS, Bootstrap</li>
+                <li> JavaScript, TypeScript</li>
+                <li> SCSS, Bootstrap, Tailwind</li>
                 <li> React JS (Vite, CRA)</li>
+                <li> Angular v13 & 19</li>
               </ul>
             </div>
 
@@ -66,7 +69,7 @@ const experience = () => {
                 <li>Node.JS (Express)</li>
                 <li>PHP</li>
                 <li>MongoDB, Mongoose</li>
-                <li>MySQL</li>
+                <li>NoSQL,MySQL</li>
               </ul>
             </div>
           </div>
@@ -82,7 +85,9 @@ const experience = () => {
             </p>
 
             <p className="heading__paragraph font-italic u-margin-top-x3">
-              Reynan Delizo is an IT Staff who gained extensive knowledged about web development using HTML5, CSS3, SCSS, JS, Node JS And PHP Whenever I looked back, it was like only yesterday that I challenged myself at work to create my own web project. Since that moment on, I find myself having this desire to work in web development. It is now leading me to this desire to make this passion as my profession. I love to learn new things. I don't want to give up.
+                A passionate Full Stack Developer with 2+ years of experience in developing and maintaining scalable web applications. 
+              Skilled in Angular, Node.js, and TypeScript, with a focus on writing clean, maintainable code and improving performance. 
+              A self-taught developer recognized with Outstanding Awards in Zuitt Capstone Projects 1, 2, and 3.
             </p>
           </div>
         </div>

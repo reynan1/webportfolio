@@ -1,3 +1,6 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as *;
+
 .workExperience {
   background-color: $color-tertiary;
   color: $color-white;

@@ -1,32 +1,31 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as *;
+
+
 .awardsAndCertificates {
     color: $color-white;
     padding: 2rem 2rem;
 
     @include respond(tab-port) {
-/*        border: 2px solid violet !important; */
        padding: 0rem 0rem;
     }
 
     @include respond(phone) {
-/*       border: 2px solid violet !important; */
       padding: 0rem 1rem 0rem 0rem;
       width: 100%;
     }
 
  &__showcase {
-/*    border: 2px solid yellow; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3rem 0 3rem 0;
   
   @include respond(tab-port) {
- /*        border: 2px solid red !important; */
         width: 100%;
         grid-template-columns: 1fr;
       }
 
       @include respond(phone) {
-/*         border: 2px solid green !important; */
         padding: 0rem 0rem;
         width: 100%;
       }
@@ -36,7 +35,6 @@
 
   
  &__achievements {
-  /*   border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,12 +44,10 @@
     width: 90%;
 
     @include respond(tab-port) {
-/*       border: 2px solid red !important; */
       width: 100%;
     }
     
     @include respond(phone) {
-/*       border: 2px solid orange !important; */
       width: 100%;
     }
 
@@ -65,7 +61,6 @@
 
       @include respond(phone) {
         width: 100%;
-/*         border: 2px solid red; */
       }
     }
 
@@ -78,7 +73,6 @@
 
       @include respond(phone) {
         width: 100%;
-  /*       border: 2px solid yellow; */
       }
     }
   }
@@ -89,7 +83,6 @@
     padding: 1rem 2rem;
 
     @include respond(tab-port) {
-   /*    border: 2px solid red !important;  */
       margin-top: 3rem;
      }
 
@@ -101,7 +94,6 @@
       cursor: pointer;
 
       @include respond(tab-port) {
-        /*    border: 2px solid red !important;  */
            gap: 2rem
        }
 

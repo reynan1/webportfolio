@@ -1,4 +1,5 @@
-@import "../base/utilities";
+@use "../base/utilities" as *;
+@use "../abstract/mixins" as *;
 
 .landing {
   &__container {
