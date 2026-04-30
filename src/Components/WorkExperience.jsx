@@ -1,89 +1,75 @@
 import { useState, useEffect, useRef } from "react";
 
 const WorkExperience = () => {
-  /*  note: if list is false the description experience show up else is hiding  */
-  const [listOne, setListOne] = useState(false)
-  const [listTwo, setListTwo ] = useState(false)
-  const [listThree, setListThree] = useState(false)
-  const [btnThree, setBtnThree] = useState(false)
-  const [btnTwo, setBtnTwo] = useState(false) 
-  const [btnOne, setBtnOne] = useState(false)
-  
+  const [list0, setList0 ] = useState(false)
+  const [list1, setList1] = useState(false)
+  const [list2, setList2 ] = useState(false)
+
+  const btn0 = () => {
+     setList0(false)
+     setList1(true)
+     setList2(true)
+  }
+
   const btn1 = () => {
-     setListOne(false)
-     setListTwo(true)
-     setListThree(true)
-     setBtnOne(true)
-     setBtnTwo(false)
-     setBtnThree(false)
+     setList0(true)
+     setList1(false)
+     setList2(true)
   }
 
   const btn2 = () => {
-     setListOne(true)
-     setListTwo(false)
-     setListThree(true)
-     setBtnOne(false)
-     setBtnTwo(true)
-     setBtnThree(false)
-  }
-
- const btn3 = () => {
-     setListThree(false)
-     setListTwo(true)
-     setListOne(true)
-     setBtnOne(false)
-     setBtnTwo(false)
-     setBtnThree(true) 
+     setList0(true)
+     setList1(true)
+      setList2(false)
   }
   
   useEffect (() => {
-    setListThree(false)
-    setListTwo(true)
-    setListOne(true)
-    setBtnOne(false)
-    setBtnTwo(false)
-    setBtnThree(true) 
+    setList0(false)
+    setList1(true)
+    setList2(true)
   }, [])
 
-  console.log(`list1: ${listOne} :: listTwo: ${listTwo} :: listThree: ${listThree}`)
+
+
   return (
-    <section className="workExperience-section u-margin-top-x12">
+    <section className="workExperience-section u-margin-top-x12" id="experience">
       <div className="workExperience">
         <div className="WorkExperience__container">
            <p className="heading__secondary text-center u-margin-top-x5 ">Work Experience</p>
 
             <div className="workExperience__table">
               <ul  className="workExperience__list-btn">
-                <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn1} id="work-btn-1" />             
-                <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn2}  id="work-btn-2"/>
-                <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn3}  id="work-btn-3"/>
+               <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn0} id="work-btn-0" />
+               <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn1} id="work-btn-1" />       
+               <input type="radio" className="workExperience__radio" name="radio-btn" onClick={btn2}  id="work-btn-2"/>
 
-               <li className= { btnThree ? "active" : undefined } id="work-btn-3">
+                
+                <li className= { list0 ? undefined : "active" } id="work-btn-0">
                    <button className="workExperience__btn">
-                      <label  htmlFor="work-btn-3" >
+                      <label  htmlFor="work-btn-0" >
                         Leisue
                       </label>
                     </button>
                 </li>
-                
-                <li className= { btnTwo ? "active" : undefined } id="work-btn-2">
+
+                <li className= { list1 ? undefined : "active" } id="work-btn-1">
                    <button className="workExperience__btn">
-                      <label  htmlFor="work-btn-2" >
+                      <label  htmlFor="work-btn-1" >
                         Zuitt
                       </label>
                     </button>
                 </li>
-                <li className={btnOne ? "active" : undefined } id="work-btn-1">
+                <li id="work-btn-2" className={list2 ? undefined : "active" } id="work-btn-2">
                     <button className="workExperience__btn">
-                      <label  htmlFor="work-btn-1">
+                      <label  htmlFor="work-btn-2">
                         Moriroku
                       </label>
                     </button>
                 </li>
               </ul>
               <div className="workExperience__description">
-      
-                 <div className={listThree ? "workExperience__leisue" : undefined} id="moriroku-id" >
+                 {/* Start of leisue  */}  
+                 <div className={list0 ? "workExperience__leisue" : undefined} >
                    <div className="heading__secondary">
                      JR Fullstack Developer@
                      <span className="span__primary">Leisue Inc.</span>
@@ -150,8 +136,8 @@ const WorkExperience = () => {
                         </li>
                     </ul>    
                 </div>
-                
-                <div className={listTwo ? "workExperience__zuitt" : undefined}>
+                {/* End of leisue  */}  
+                <div className={list1 ? "workExperience__zuitt" : undefined}>
                     <div className="heading__secondary ">
                          Student 
                         <span className="span__primary">@Zuitt</span>
@@ -194,18 +180,18 @@ const WorkExperience = () => {
                           <ul className="workExperience-nested__list list-unstyled">
                               <li>
                                  <span className="heading__quinary">
-                                              For our capstone2 we used <em> Node.js, Express,
-                                              Mongoose, MongoDB Atlas, Postman and Render ( web hosting )</em>.
+                                       For our capstone2 we used <em> Node.js, Express,
+                                       Mongoose, MongoDB Atlas, Postman and Render ( web hosting )</em>.
                                  </span>  
                               </li>
                               <li>
                                  <span className="heading__quinary">
-                                              We used <em> CRUD operations for products and user information, user validation, user role, user authorization and permission, we use Postman for check JSON data rusult, We use render for our web hosting of our backend</em>.
+                                       We used <em> CRUD operations for products and user information, user validation, user role, user authorization and permission, we use Postman for check JSON data rusult, We use render for our web hosting of our backend</em>.
                                  </span>  
                               </li>
                               <li>
                                  <span className="heading__quinary ">
-                                              My functionalities I build are <em>Registration, Login, user role ( admin, user ), admin authorization ( user profile, admin dashboar ( number of user, products, archive list ) , archive - products, user, add - update - remove products ), user authorization ( user profile,can buy products, update - delete products, can pay products ), Payment card ( this funtionalities is valid only for user to used it for buying products. )</em>.
+                                       My functionalities I build are <em>Registration, Login, user role ( admin, user ), admin authorization ( user profile, admin dashboar ( number of user, products, archive list ) , archive - products, user, add - update - remove products ), user authorization ( user profile,can buy products, update - delete products, can pay products ), Payment card ( this funtionalities is valid only for user to used it for buying products. )</em>.
                                  </span> 
                               </li>
                           </ul>        
@@ -249,7 +235,7 @@ const WorkExperience = () => {
                  {/* End of capstone 2 */}  
 
                 </div>
-                <div className={listOne ? "workExperience__moriroku" : undefined} id="moriroku-id" >
+                <div className={list2 ? "workExperience__moriroku" : undefined} >
                    <div className="heading__secondary">
                      IT Staff 
                      <span className="span__primary">@Moriroku</span>
@@ -298,7 +284,6 @@ const WorkExperience = () => {
                         </li>
                     </ul>    
                 </div>
-
               </div>
             </div>
 

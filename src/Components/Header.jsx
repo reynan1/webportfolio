@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import WebLogo from "../image/logo.png";
 
 const Header = () => {
@@ -9,6 +9,7 @@ const Header = () => {
     winWidth: window.innerWidth,
     winHeight: window.innerHeight
   })
+  const navigate = useNavigate();
 
   const detectSize = () => {
     detectHW({
@@ -24,6 +25,15 @@ const Header = () => {
   const closeBtn = () => {
     setNavTag(false)
   }
+
+  const scrollToSection = (id) => {
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 100);
+  };
 
   useEffect(() => {
     window.addEventListener('resize', detectSize)
@@ -73,8 +83,6 @@ const Header = () => {
       lastScroll = currentScroll;
     })
 
-    
-
 
   }, [])
 
@@ -88,12 +96,12 @@ const Header = () => {
       {/* nav container tag */}
       <nav className={navTag ? "header__nav" : "header__nav-close"} >
         <ul>
-          <li><NavLink as={NavLink} to="#">Home</NavLink></li>
-          <li><NavLink as={NavLink} to="#">About Me</NavLink></li>
-          <li><NavLink as={NavLink} to="#">Projects</NavLink></li>
-          <li><NavLink as={NavLink} to="#">Experience</NavLink></li>
-          <li><NavLink as={NavLink} to="#">Achievements</NavLink></li>
-          <li><NavLink as={NavLink} to="#">Let`s Talk</NavLink></li>
+          <li onClick={() => scrollToSection("home")}><NavLink as={NavLink} to="#">Home</NavLink></li>
+          <li onClick={() => scrollToSection("aboutMe")}><NavLink as={NavLink} to="#">About Me</NavLink></li>
+          <li onClick={() => scrollToSection("project")}><NavLink as={NavLink} to="#">Projects</NavLink></li>
+          <li onClick={() => scrollToSection("experience")}><NavLink as={NavLink} to="#">Experience</NavLink></li>
+          <li onClick={() => scrollToSection("achievements")}><NavLink as={NavLink} to="#">Achievements</NavLink></li>
+          <li onClick={() => scrollToSection("talk")}><NavLink as={NavLink} to="#">Let`s Talk</NavLink></li>
         </ul>
 
          <span class="header__icon-mobile--close">  

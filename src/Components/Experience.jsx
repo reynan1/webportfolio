@@ -2,7 +2,7 @@ import userPic from "../image/profile.jpg";
 
 const experience = () => {
   return (
-    <section className="experience-section">
+    <section className="experience-section" id="aboutMe">
       <div className="experience">
 
         {/* experience container */}
@@ -29,8 +29,6 @@ const experience = () => {
                 <li>Adobe Illustrator CC 2020</li>
                 <li>GitHub</li>
                 <li>Postman</li>
-                <li>Docker</li>
-                <li>AWS S3 Bucket</li>
               </ul>
             </div>
 
@@ -49,8 +47,7 @@ const experience = () => {
                 <li> HTML 5, CSS 3</li>
                 <li> JavaScript, TypeScript</li>
                 <li> SCSS, Bootstrap, Tailwind</li>
-                <li> React JS (Vite, CRA)</li>
-                <li> Angular v13 & 19</li>
+                <li> ReactJS, AngularJS</li>
               </ul>
             </div>
 
@@ -66,10 +63,11 @@ const experience = () => {
               <p className="heading__quinary u-margin-top-x2">Languages use for Back-End Development</p>
 
               <ul className="experience__skill-list list-unstyled">
-                <li>Node.JS (Express)</li>
-                <li>PHP</li>
+                <li>ExpressJS, NodeJS, Spring Boot </li>
+                <li>Docker, AWS S3 bucket</li>
+                <li>PHP, Java</li>
                 <li>MongoDB, Mongoose</li>
-                <li>NoSQL,MySQL</li>
+                <li>MySQL</li>
               </ul>
             </div>
           </div>
@@ -85,7 +83,7 @@ const experience = () => {
             </p>
 
             <p className="heading__paragraph font-italic u-margin-top-x3">
-                A passionate Full Stack Developer with 2+ years of experience in developing and maintaining scalable web applications. 
+              A passionate Full Stack Developer with 2+ years of experience in developing and maintaining scalable web applications. 
               Skilled in Angular, Node.js, and TypeScript, with a focus on writing clean, maintainable code and improving performance. 
               A self-taught developer recognized with Outstanding Awards in Zuitt Capstone Projects 1, 2, and 3.
             </p>

@@ -1,8 +1,8 @@
 @use "../abstract/variable" as *;
 @use "../base/utilities" as *;
 @use "../abstract/mixins" as *;
-.project {
 
+.project {
    &__showcase {
 /*      border: 2px solid #fff;  */
      display: grid;
@@ -54,7 +54,7 @@
       }
 
       &-img {
-         width: 31rem;
+         width: 95%;
    /*       height: 22rem; */
          border-radius: 10px;
          display:block;
