@@ -6,7 +6,7 @@ const Project = () => {
 
 
   return (
-    <section className="project-section">
+    <section className="project-section" id="project">
       <div className="project__container">
         <div className="project__showcase">
           <div className="project__showcase-message u-margin-top-x7">

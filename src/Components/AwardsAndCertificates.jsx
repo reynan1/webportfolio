@@ -4,7 +4,7 @@ import capstone3 from "../image/awards/capstone3.png"
 import completionCert from "../image/certificates/completionCert.png"
 const AwardsAndCertificates = () => {
   return (
-    <section className='awwardsAndCertificates-section'>
+    <section className='awwardsAndCertificates-section' id="achievements">
       <div className="awardsAndCertificates ">
         <div className="awardsAndCertificates__container">
           <p className="heading__secondary text-center u-margin-top-x7"> Achievements Awards & Certificates </p>

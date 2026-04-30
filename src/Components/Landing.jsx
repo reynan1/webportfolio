@@ -5,7 +5,7 @@ import userCircularImage from "../image/reynan2.png"
 
 const Landing = () => {
   return (
-    <section className="landing-section" >
+    <section className="landing-section" id="home">
       {/* landing container */}
       <div className="landing__container  u-margin-top-x13" >
         {/* landing intro container */}
