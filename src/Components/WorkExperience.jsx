@@ -59,7 +59,7 @@ const WorkExperience = () => {
                       </label>
                     </button>
                 </li>
-                <li id="work-btn-2" className={list2 ? undefined : "active" } id="work-btn-2">
+                <li  className={list2 ? undefined : "active" } id="work-btn-2">
                     <button className="workExperience__btn">
                       <label  htmlFor="work-btn-2">
                         Moriroku

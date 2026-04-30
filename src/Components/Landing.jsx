@@ -18,7 +18,7 @@ const Landing = () => {
               An enthusiastic person with a great passion toward Web development and possess an extensive knowledge through front-end and back-end development
             </blockquote>
 
-            <Link to="./src/documents/Reynan_Delizo_Resume.pdf" download="Reynan_Delizo_Resume.pdf" target="_blank" className="btn__link">
+            <Link to="./public/Reynan_Delizo_Resume.pdf" download="Reynan_Delizo_Resume.pdf" target="_blank" className="btn__link">
               Download CV&nbsp;
               <ion-icon name="cloud-download-outline" className="u-mini-margin-right"></ion-icon>
             </Link>
