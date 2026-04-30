@@ -17,11 +17,14 @@ const Landing = () => {
             <blockquote className="heading__quinary u-margin-top-x3">
               An enthusiastic person with a great passion toward Web development and possess an extensive knowledge through front-end and back-end development
             </blockquote>
-
-            <Link to="./public/Reynan_Delizo_Resume.pdf" download="Reynan_Delizo_Resume.pdf" target="_blank" className="btn__link">
-              Download CV&nbsp;
-              <ion-icon name="cloud-download-outline" className="u-mini-margin-right"></ion-icon>
-            </Link>
+            <a
+              href="https://drive.google.com/uc?export=download&id=18hCfrLusUqHG_skT_vX_NkhFuMOmmc4m"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn__link"
+            >
+              Download CV
+            </a>
           </div>
 
           <div className="landing__circular">
